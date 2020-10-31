@@ -29,6 +29,7 @@ export const LoadersCodeBlocks = [
   {
         html: `
         <loader-bounce></loader-bounce>
+        <loader-bounce size="30px"></loader-bounce>
         `
     }
 ];

@@ -270,7 +270,13 @@ export const FormsCodeBlocks = [
             <input class="custom-control-input" type="checkbox" name="checkbox" id="checkbox3" disabled>
             <label class="custom-control-label align-self-center" for="checkbox3">Check
                 me</label>
-        </div>`
+        </div>
+
+        <div class="d-flex custom-control custom-checkbox nao-custom-checkbox-sm mb-3">
+            <input class="custom-control-input" type="checkbox" name="checkbox" id="checkboxsm1">
+            <label class="custom-control-label align-self-center" for="checkboxsm1">Small checkbox</label>
+        </div>
+`
   },
   {
     html: `
@@ -297,6 +303,31 @@ export const FormsCodeBlocks = [
             <div class="d-flex align-items-center">
             <span class="badge-text">First name: “Johnjohusu Mcgregor Mcgregor" </span><i class="nao-icon-cancel ml-2"></i>
             </div>
-        </span>`
+        </span>
+        <span class="text-uppercase-first badge badge-pill badge-success mb-4 mr-3">Success</span>
+        <span class="text-uppercase-first badge badge-pill badge-warning mb-4 mr-3">Warning</span>
+        <span class="text-uppercase-first badge badge-pill badge-text-primary-light mb-4 mr-3">Text primary light</span>
+        <span class="text-uppercase-first badge badge-pill badge-text-primary-lightest mb-4 mr-3">Text primary lightest</span>
+        <span class="text-uppercase-first badge badge-pill badge-text-primary mb-4 mr-3">Text primary</span>
+`
+  },
+  {
+    html: `
+        <input class="form-control nao-form-control-2 nao-mw-250 mb-3" type="text" placeholder="nao-from-control-2">
+        <input class="form-control nao-form-control-2 nao-from-control-2-sm nao-mw-250" type="text" placeholder="nao-from-control-2-sm">`
+  },
+  {
+    html: `
+    <div class="nao-input-ng-select-group-sm nao-mw-200">
+        <input type="number" class="form-control form-control-sm" [placeholder]="'1.93'" />
+        <ng-select [clearable]="false" class="nao-ng-select-sm ng-select-text-6" appendTo=".position-relative">
+          <ng-option value="kg">
+            kg
+          </ng-option>
+          <ng-option value="lb">
+            lb
+          </ng-option>
+        </ng-select>
+      </div>`
   }
 ];

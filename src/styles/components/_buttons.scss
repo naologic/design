@@ -109,6 +109,7 @@ $value in $theme-colors {
 
 // *************************************************
 // btn text only
+// TODO: check boilerplate and delete in case is not used
 .btn-text-only {
   color: var(--primary);
   background-color: transparent;
@@ -217,7 +218,7 @@ $value in $theme-colors {
   &:disabled {
     color: $color;
     background-color: transparent;
-    box-shadow: 0 3px 3px 1px var(--text-7);
+    //box-shadow: 0 3px 3px 1px var(--text-7);
   }
 
   &:not(:disabled):not(.disabled):active,
@@ -257,8 +258,8 @@ $value in $theme-colors {
 }
 
 .btn-flip.flipped {
-  color: var(--white);
-  background-color: var(--text-primary-light);
+  color: var(--text-primary);
+  background-color: var(--bg-2);
 }
 
 .btn-flip.disabled,
@@ -296,8 +297,23 @@ $value in $theme-colors {
 
 
 // btn without box-shadow
-// todo: document this
+// todo: merge this 2 together and update all the CFPs from BOB
 .btn-no-box-shadow {
+  &:focus {
+    box-shadow: none;
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    box-shadow: none;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+// todo: merge this 2 together and update all the CFPs from BOB
+.btn-box-shadow-none {
   &:focus {
     box-shadow: none;
   }
@@ -376,4 +392,23 @@ strong {
 
 .strengthBar {
   margin-left: 0 !important;
+}
+
+.btn-simple-dark-blue {
+  &:hover {
+    background-color: rgba(104, 113, 150, 0.2);
+  }
+}
+
+.btn-primary-text-only {
+  color: var(--primary);
+  text-transform: none;
+
+  &:hover {
+    color: var(--primary);
+  }
+
+  &:focus, &:active {
+    box-shadow: none;
+  }
 }

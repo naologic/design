@@ -104,7 +104,7 @@ $custom-switch-lg-top-fix: 3px;
   display: block;
   position: relative;
   padding-left: 39px;
-  margin-bottom: 12px;
+  margin-bottom: 0;
   user-select: none;
   cursor: pointer;
 
@@ -189,8 +189,28 @@ $custom-switch-lg-top-fix: 3px;
   .custom-control-input:focus:not(:checked)~.custom-control-label::before {
     border-color: solid 1px var(--text-7);
   }
+}
 
-  //   todo: add box-shaddow circle
+.nao-custom-checkbox-sm {
+  min-height: unset;
+  padding-left: 19px;
+
+  .custom-control-label::before,
+  .custom-control-label::after {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px !important;
+    height: 14px !important;
+    left: -19px;
+  }
+}
+
+.center-custom-checkbox {
+  .custom-control-label::before,
+  .custom-control-label::after {
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 // *************************************************
@@ -265,4 +285,28 @@ $custom-switch-lg-top-fix: 3px;
     text-overflow: ellipsis;
     display:inline-block;
   }
+}
+
+
+.badge-pill {
+  padding: 3px 10px;
+}
+
+.badge-success, .badge-warning {
+  color: var(--white);
+}
+
+.badge-text-primary-light {
+  background-color: var(--text-primary-light);
+  color: var(--white);
+}
+
+.badge-text-primary-lightest {
+  background-color: var(--text-primary-lightest);
+  color: var(--white);
+}
+
+.badge-text-primary {
+  background-color: var(--text-primary);
+  color: var(--white);
 }

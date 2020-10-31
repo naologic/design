@@ -14,6 +14,7 @@ import { InputGroupComponent } from './input-group/input-group.component';
 import { NaoDesignModule } from '@naologic/design';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { WizardComponent } from './wizard/wizard.component';
+import { ModalsParts } from './_parts/modals.parts-module';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { WizardComponent } from './wizard/wizard.component';
     CommonModule,
     SharedModule,
     NaoDesignModule,
-    ComponentsRouting
+    ComponentsRouting,
+    ModalsParts
   ],
   providers: [
     ComponentsPublicFlow,

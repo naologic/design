@@ -7,6 +7,7 @@ import { IconsComponent } from './icons/icons.component';
 import { IllustrationComponent } from './illustration/illustration.component';
 import { SizingComponent } from './sizing/sizing.component';
 import { UtilityComponent } from './utility/utility.component';
+import {BordersComponent} from "./borders/borders.component";
 
 const routes: Routes = [
   {
@@ -63,6 +64,13 @@ const routes: Routes = [
         component: UtilityComponent,
         data: {
           title: 'Utilities - Naologic',
+        }
+      },
+      {
+        path: 'borders',
+        component: BordersComponent,
+        data: {
+          title: 'Borders - Naologic',
         }
       }
     ]

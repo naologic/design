@@ -55,24 +55,37 @@
 }
 // *************************************************
 // Nao breadcrumb
+.nao-breadcrumb-container {
+  background-color: var(--white);
+  border-bottom: solid 1px var(--bg-2);
+}
+
 .nao-nav-breadcrumb {
   width: 100%;
   height: 33px;
-  background-color: var(--white);
   list-style: none;
   border-bottom: solid 1px var(--bg-2);
-  padding-left: 30px;
-  margin: 0;
+  max-width: 1880px;
+  padding: 0 40px;
+  margin: 0 auto;
+  border-bottom: unset;
+  background-color: unset;
+
+  @include rtl {
+    justify-content: flex-end;
+    flex-direction: row-reverse !important;
+  }
 
   li {
     display: inline;
-    font-size: pixelToRem(12px);
-    font-weight: $font-weight-lighter;
     color: var(--text-primary);
+    font-size: pixelToRem(14px);
+    font-weight: $font-weight-semibold;
 
     a {
+      font-weight: $font-weight-regular;
       text-decoration: none;
-      color: var(--text-primary-lightest);
+      color: var(--text-primary);
 
       &:hover {
         text-decoration: underline;
@@ -82,12 +95,16 @@
     &:before {
       // todo: change the content when the font is updated
       font-family: 'nao-system-icon';
-      padding: 0 5px;
+      padding: 0 10px;
       color: var(--text-primary-lightest);
       font-size: 8px;
       position: relative;
       top: -1px;
       content: "\f9b4";
+
+      @include rtl {
+        content: "\f9af";
+      }
     }
 
     &:first-child {

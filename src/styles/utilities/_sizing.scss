@@ -2,6 +2,7 @@
 // Sizing Max-width
 $sizing-max-width: (
   100: 100px,
+  130: 130px,
   140: 140px,
   150: 150px,
   190: 190px,
@@ -14,10 +15,18 @@ $sizing-max-width: (
   310: 310px,
   300: 300px,
   320: 320px,
+  350: 350px,
   380: 380px,
-  560: 560px);
+  400: 400px,
+  560: 560px,
+  660: 660px,
+  700: 700px,
+  800: 800px,
+  900: 900px,
+  1600: 1600px
+);
 
-// Generate Max-width
+// Generate max-width
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);

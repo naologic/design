@@ -1,186 +1,6 @@
 export const TableCodeBlocks = [
   {
     html: `
-        <div class="nao-simple-table">
-            <table class="table mb-0">
-                <thead class="table-header">
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">Name</th>
-                      <th scope="col">Email</th>
-                      <th scope="col">Comments</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Mark</td>
-                        <td>Doe</td>
-                        <td>No</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Lary</td>
-                        <td>Doe</td>
-                        <td>No</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Jon</td>
-                        <td>Doe</td>
-                        <td>No</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Jacob</td>
-                        <td>Doe</td>
-                        <td>No</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>No</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>Lary</td>
-                        <td>Otto</td>
-                        <td>No</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>Jon</td>
-                        <td>Otto</td>
-                        <td>No</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>Jacob</td>
-                        <td>Otto</td>
-                        <td>No</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>`
-  },
-  {
-    html: `
-        <div class="nao-simple-table nao-table-scroll-example">
-            <table class="table mb-0">
-                <thead class="table-header nao-sticky-thead">
-                    <tr>
-                      <th scope="col" style="min-width: 120px">#</th>
-                      <th scope="col" style="min-width: 200px">Name</th>
-                      <th scope="col" style="min-width: 200px">Email</th>
-                      <th scope="col" style="min-width: 200px">Col_1</th>
-                      <th scope="col" style="min-width: 200px">Col_2</th>
-                      <th scope="col" style="min-width: 200px">Col_3</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Mark</td>
-                        <td>Doe</td>
-                        <td>Col_1</td>
-                        <td>Col_2</td>
-                        <td>Col_3</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Lary</td>
-                        <td>Doe</td>
-                        <td>Col_1</td>
-                        <td>Col_2</td>
-                        <td>Col_3</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Jon</td>
-                        <td>Doe</td>
-                        <td>Col_1</td>
-                        <td>Col_2</td>
-                        <td>Col_3</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Jacob</td>
-                        <td>Doe</td>
-                        <td>Col_1</td>
-                        <td>Col_2</td>
-                        <td>Col_3</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>Col_1</td>
-                        <td>Col_2</td>
-                        <td>Col_3</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>Lary</td>
-                        <td>Otto</td>
-                        <td>Col_1</td>
-                        <td>Col_2</td>
-                        <td>Col_3</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>Jon</td>
-                        <td>Otto</td>
-                        <td>Col_1</td>
-                        <td>Col_2</td>
-                        <td>Col_3</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>Jacob</td>
-                        <td>Otto</td>
-                        <td>Col_1</td>
-                        <td>Col_2</td>
-                        <td>Col_3</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>Col_1</td>
-                        <td>Col_2</td>
-                        <td>Col_3</td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td>Lary</td>
-                        <td>Otto</td>
-                        <td>Col_1</td>
-                        <td>Col_2</td>
-                        <td>Col_3</td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td>Jon</td>
-                        <td>Otto</td>
-                        <td>Col_1</td>
-                        <td>Col_2</td>
-                        <td>Col_3</td>
-                    </tr>
-                    <tr>
-                        <td>12</td>
-                        <td>Jacob</td>
-                        <td>Otto</td>
-                        <td>Col_1</td>
-                        <td>Col_2</td>
-                        <td>Col_3</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>`
-  },
-  {
-    html: `
     <div class="card nao-card-table-1 mb-5" [ngClass]="{'nao-condensed-table': paging.tableCondensed$.value}">
           <div class="d-flex flex-row card-header selected align-items-center" *ngIf="noSelectedRows() > 0">
             <div class="pr-3">
@@ -276,24 +96,51 @@ export const TableCodeBlocks = [
               </tbody>
             </table>
           </div>
-          <div class="card-footer d-flex flex-row align-items-center justify-content-between">
+          <div class="card-footer d-flex flex-row align-items-center justify-content-between nao-pagination">
             <div>
-              <span class='rows-label'>Rows per page: </span>
-              <select (change)="paging.perPage$.next($event.target.value)" [value]="paging.perPage$.getValue()"
-                class="custom-select custom-select-sm d-inline-block w-auto">
-                <option *ngFor="let limit of [5, 10, 20, 50, 100]" [value]="limit">{{ limit }}</option>
-              </select>
+              Rows per page:
+              <ng-select (change)="paging.perPage$.next($event);"
+                         [clearable]="false"
+                         [disabled]="false"
+                         [items]="[5, 10, 20, 50, 100]"
+                         [ngModel]="paging.perPage$.getValue()"
+                         [searchable]="false"
+                         class="nao-ng-select-sm d-inline-block w-auto">
+              </ng-select>
+
             </div>
-            <div>
-              <ngb-pagination class="pull-right" [collectionSize]="paging.totalRows"
-                [pageSize]="paging.perPage$.getValue()" [(page)]="paging.currentPage" [maxSize]="paging.maxSize"
-                [directionLinks]="true" [boundaryLinks]="true">
-                <ng-template ngbPaginationPrevious>Previous</ng-template>
-                <ng-template ngbPaginationNext>Next</ng-template>
-                <ng-template ngbPaginationEllipsis>...</ng-template>
-                <ng-template ngbPaginationNumber let-page>{{ page }}</ng-template>
+
+            <div class="ml-auto d-flex align-items-center">
+              <ngb-pagination [(page)]="paging.currentPage"
+                              [boundaryLinks]="true"
+                              [collectionSize]="paging.totalRows"
+                              [directionLinks]="true"
+                              [disabled]="false"
+                              [maxSize]="paging.maxSize"
+                              [pageSize]="paging.perPage$.getValue()">
+                <ng-template ngbPaginationPrevious><i class="nao-icon-arrow-back-1"></i></ng-template>
+                <ng-template ngbPaginationFirst>
+                  <div class="d-flex" style="padding-top: 4px">
+                    <div class="nao-line-pagination"></div>
+                    <i class="nao-icon-arrow-back-1"></i>
+                  </div>
+                </ng-template>
+                <ng-template ngbPaginationNext><i class="nao-icon-arrow-next-1"></i></ng-template>
+                <ng-template ngbPaginationLast>
+                  <div class="d-flex" style="padding-top: 4px">
+                    <i class="nao-icon-arrow-next-1"></i>
+                    <div class="nao-line-pagination"></div>
+                  </div>
+                </ng-template>
               </ngb-pagination>
+
+              <div class="pagination-separator"></div>
+              <div>
+                page {{ paging.currentPage }} of {{ paging.totalPages !== 0 ? paging.totalPages : 1 }}
+              </div>
             </div>
+
+
           </div>
         </div>`
   },
@@ -452,24 +299,51 @@ export const TableCodeBlocks = [
               </tbody>
             </table>
           </div>
-          <div class="card-footer d-flex flex-row align-items-center justify-content-between">
+          <div class="card-footer d-flex flex-row align-items-center justify-content-between nao-pagination">
             <div>
-              <span class='rows-label'>Rows per page: </span>
-              <select (change)="paging.perPage$.next($event.target.value)" [value]="paging.perPage$.getValue()"
-                class="custom-select custom-select-sm d-inline-block w-auto">
-                <option *ngFor="let limit of [5, 10, 20, 50, 100]" [value]="limit">{{ limit }}</option>
-              </select>
+              Rows per page:
+              <ng-select (change)="paging.perPage$.next($event);"
+                         [clearable]="false"
+                         [disabled]="false"
+                         [items]="[5, 10, 20, 50, 100]"
+                         [ngModel]="paging.perPage$.getValue()"
+                         [searchable]="false"
+                         class="nao-ng-select-sm d-inline-block w-auto">
+              </ng-select>
+
             </div>
-            <div>
-              <ngb-pagination class="pull-right" [collectionSize]="paging.totalRows"
-                [pageSize]="paging.perPage$.getValue()" [(page)]="paging.currentPage" [maxSize]="paging.maxSize"
-                [directionLinks]="true" [boundaryLinks]="true">
-                <ng-template ngbPaginationPrevious>Previous</ng-template>
-                <ng-template ngbPaginationNext>Next</ng-template>
-                <ng-template ngbPaginationEllipsis>...</ng-template>
-                <ng-template ngbPaginationNumber let-page>{{ page }}</ng-template>
+
+            <div class="ml-auto d-flex align-items-center">
+              <ngb-pagination [(page)]="paging.currentPage"
+                              [boundaryLinks]="true"
+                              [collectionSize]="paging.totalRows"
+                              [directionLinks]="true"
+                              [disabled]="false"
+                              [maxSize]="paging.maxSize"
+                              [pageSize]="paging.perPage$.getValue()">
+                <ng-template ngbPaginationPrevious><i class="nao-icon-arrow-back-1"></i></ng-template>
+                <ng-template ngbPaginationFirst>
+                  <div class="d-flex" style="padding-top: 4px">
+                    <div class="nao-line-pagination"></div>
+                    <i class="nao-icon-arrow-back-1"></i>
+                  </div>
+                </ng-template>
+                <ng-template ngbPaginationNext><i class="nao-icon-arrow-next-1"></i></ng-template>
+                <ng-template ngbPaginationLast>
+                  <div class="d-flex" style="padding-top: 4px">
+                    <i class="nao-icon-arrow-next-1"></i>
+                    <div class="nao-line-pagination"></div>
+                  </div>
+                </ng-template>
               </ngb-pagination>
+
+              <div class="pagination-separator"></div>
+              <div>
+                page {{ paging.currentPage }} of {{ paging.totalPages !== 0 ? paging.totalPages : 1 }}
+              </div>
             </div>
+
+
           </div>
         </div>`,
     ts1: `
@@ -696,24 +570,51 @@ export const TableCodeBlocks = [
               </tbody>
             </table>
           </div>
-          <div class="card-footer d-flex flex-row align-items-center justify-content-between">
+          <div class="card-footer d-flex flex-row align-items-center justify-content-between nao-pagination">
             <div>
-              <span class='rows-label'>Rows per page: </span>
-              <select (change)="paging.perPage$.next($event.target.value)" [value]="paging.perPage$.getValue()"
-                class="custom-select custom-select-sm d-inline-block w-auto">
-                <option *ngFor="let limit of [5, 10, 20, 50, 100]" [value]="limit">{{ limit }}</option>
-              </select>
+              Rows per page:
+              <ng-select (change)="paging.perPage$.next($event);"
+                         [clearable]="false"
+                         [disabled]="false"
+                         [items]="[5, 10, 20, 50, 100]"
+                         [ngModel]="paging.perPage$.getValue()"
+                         [searchable]="false"
+                         class="nao-ng-select-sm d-inline-block w-auto">
+              </ng-select>
+
             </div>
-            <div>
-              <ngb-pagination class="pull-right" [collectionSize]="paging.totalRows"
-                [pageSize]="paging.perPage$.getValue()" [(page)]="paging.currentPage" [maxSize]="paging.maxSize"
-                [directionLinks]="true" [boundaryLinks]="true">
-                <ng-template ngbPaginationPrevious>Previous</ng-template>
-                <ng-template ngbPaginationNext>Next</ng-template>
-                <ng-template ngbPaginationEllipsis>...</ng-template>
-                <ng-template ngbPaginationNumber let-page>{{ page }}</ng-template>
+
+            <div class="ml-auto d-flex align-items-center">
+              <ngb-pagination [(page)]="paging.currentPage"
+                              [boundaryLinks]="true"
+                              [collectionSize]="paging.totalRows"
+                              [directionLinks]="true"
+                              [disabled]="false"
+                              [maxSize]="paging.maxSize"
+                              [pageSize]="paging.perPage$.getValue()">
+                <ng-template ngbPaginationPrevious><i class="nao-icon-arrow-back-1"></i></ng-template>
+                <ng-template ngbPaginationFirst>
+                  <div class="d-flex" style="padding-top: 4px">
+                    <div class="nao-line-pagination"></div>
+                    <i class="nao-icon-arrow-back-1"></i>
+                  </div>
+                </ng-template>
+                <ng-template ngbPaginationNext><i class="nao-icon-arrow-next-1"></i></ng-template>
+                <ng-template ngbPaginationLast>
+                  <div class="d-flex" style="padding-top: 4px">
+                    <i class="nao-icon-arrow-next-1"></i>
+                    <div class="nao-line-pagination"></div>
+                  </div>
+                </ng-template>
               </ngb-pagination>
+
+              <div class="pagination-separator"></div>
+              <div>
+                page {{ paging.currentPage }} of {{ paging.totalPages !== 0 ? paging.totalPages : 1 }}
+              </div>
             </div>
+
+
           </div>
         </div>`,
     ts1: `
@@ -966,24 +867,51 @@ export const TableCodeBlocks = [
               </tbody>
             </table>
           </div>
-          <div class="card-footer d-flex flex-row align-items-center justify-content-between">
+          <div class="card-footer d-flex flex-row align-items-center justify-content-between nao-pagination">
             <div>
-              <span class='rows-label'>Rows per page:</span>
-              <select (change)="paging.perPage$.next($event.target.value)" [value]="paging.perPage$.getValue()"
-                class="custom-select custom-select-sm d-inline-block w-auto">
-                <option *ngFor="let limit of [5, 10, 20, 50, 100]" [value]="limit">{{ limit }}</option>
-              </select>
+              Rows per page:
+              <ng-select (change)="paging.perPage$.next($event);"
+                         [clearable]="false"
+                         [disabled]="false"
+                         [items]="[5, 10, 20, 50, 100]"
+                         [ngModel]="paging.perPage$.getValue()"
+                         [searchable]="false"
+                         class="nao-ng-select-sm d-inline-block w-auto">
+              </ng-select>
+
             </div>
-            <div>
-              <ngb-pagination class="pull-right" [collectionSize]="paging.totalRows"
-                [pageSize]="paging.perPage$.getValue()" [(page)]="paging.currentPage" [maxSize]="paging.maxSize"
-                [directionLinks]="true" [boundaryLinks]="true">
-                <ng-template ngbPaginationPrevious>Previous</ng-template>
-                <ng-template ngbPaginationNext>Next</ng-template>
-                <ng-template ngbPaginationEllipsis>...</ng-template>
-                <ng-template ngbPaginationNumber let-page>{{ page }}</ng-template>
+
+            <div class="ml-auto d-flex align-items-center">
+              <ngb-pagination [(page)]="paging.currentPage"
+                              [boundaryLinks]="true"
+                              [collectionSize]="paging.totalRows"
+                              [directionLinks]="true"
+                              [disabled]="false"
+                              [maxSize]="paging.maxSize"
+                              [pageSize]="paging.perPage$.getValue()">
+                <ng-template ngbPaginationPrevious><i class="nao-icon-arrow-back-1"></i></ng-template>
+                <ng-template ngbPaginationFirst>
+                  <div class="d-flex" style="padding-top: 4px">
+                    <div class="nao-line-pagination"></div>
+                    <i class="nao-icon-arrow-back-1"></i>
+                  </div>
+                </ng-template>
+                <ng-template ngbPaginationNext><i class="nao-icon-arrow-next-1"></i></ng-template>
+                <ng-template ngbPaginationLast>
+                  <div class="d-flex" style="padding-top: 4px">
+                    <i class="nao-icon-arrow-next-1"></i>
+                    <div class="nao-line-pagination"></div>
+                  </div>
+                </ng-template>
               </ngb-pagination>
+
+              <div class="pagination-separator"></div>
+              <div>
+                page {{ paging.currentPage }} of {{ paging.totalPages !== 0 ? paging.totalPages : 1 }}
+              </div>
             </div>
+
+
           </div>
         </div>
 `,
@@ -1079,5 +1007,174 @@ export const TableCodeBlocks = [
     },
   ];
 `
+  },
+  {
+    html: `
+     <div class="card nao-card-table-2 flex-grow-1">
+          <div class="card-header d-flex flex-column">
+            <h6 class="mb-1 font-size-18">Job status</h6>
+            <h6 class="font-size-14">Check the status of your active integrations, local imports, uploads and exports to make sure your data is flowing as it should.</h6>
+          </div>
+          <div class="card-body pt-0">
+            <div class="overflow-auto">
+              <table class="w-100">
+                <thead>
+                <!-- Header -->
+                <tr class="font-size-12 font-weight-semibold text-primary-lightest border-bottom border-bg-2 text-uppercase">
+
+                  <th class="p-0 pb-2 pt-20" scope="col" style="min-width: 100px; width: 140px">Job name</th>
+                  <th class="p-0 pb-2 pt-20" scope="col" style="min-width: 150px; width: 200px">Description</th>
+                  <th class="p-0 pb-2 pt-20" scope="col" style="min-width: 190px; width: 240px">Started</th>
+                  <th class="p-0 pb-2 pt-20" scope="col" style="min-width: 190px; width: 240px">Ended</th>
+                  <th class="p-0 pb-2 pt-20" scope="col" style="min-width: 60px; width: 100px">Retries</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!-- Rows -->
+                <tr style="height: 55px" class="font-size-14 border-bottom border-bg-2">
+                  <td class="p-0 pr-2" style="min-width: 100px; width: 140px;">
+                    Job name 1
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 150px; width: 200px;">
+                    Job description 1
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 190px; width: 240px;">
+                    {{ 1604154371674 | date: 'medium' }}
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 190px; width: 240px;">
+                    {{ 1604154371674 | date: 'medium' }}
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 60px; width: 100px;">
+                    0
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 80px; width: 100px;">
+                    20%
+                  </td>
+                </tr>
+                <tr style="height: 55px" class="font-size-14 border-bottom border-bg-2">
+                  <td class="p-0 pr-2" style="min-width: 100px; width: 140px;">
+                    Job name 2
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 150px; width: 200px;">
+                    Job description 2
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 190px; width: 240px;">
+                    {{ 1604154371674 | date: 'medium' }}
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 190px; width: 240px;">
+                    {{ 1604154371674 | date: 'medium' }}
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 60px; width: 100px;">
+                    5
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 80px; width: 100px;">
+                    20%
+                  </td>
+                </tr>
+                <tr style="height: 55px" class="font-size-14 border-bottom border-bg-2">
+                  <td class="p-0 pr-2" style="min-width: 100px; width: 140px;">
+                    Job name 3
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 150px; width: 200px;">
+                    Job description 3
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 190px; width: 240px;">
+                    {{ 1604154371674 | date: 'medium' }}
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 190px; width: 240px;">
+                    {{ 1604154371674 | date: 'medium' }}
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 60px; width: 100px;">
+                    2
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 80px; width: 100px;">
+                    10%
+                  </td>
+                </tr>
+                <tr style="height: 55px" class="font-size-14 border-bottom border-bg-2">
+                  <td class="p-0 pr-2" style="min-width: 100px; width: 140px;">
+                    Job name 4
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 150px; width: 200px;">
+                    Job description 4
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 190px; width: 240px;">
+                    {{ 1604154371674 | date: 'medium' }}
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 190px; width: 240px;">
+                    {{ 1604154371674 | date: 'medium' }}
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 60px; width: 100px;">
+                    0
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 80px; width: 100px;">
+                    100%
+                  </td>
+                </tr>
+                <tr style="height: 55px" class="font-size-14 border-bottom border-bg-2">
+                  <td class="p-0 pr-2" style="min-width: 100px; width: 140px;">
+                    Job name 5
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 150px; width: 200px;">
+                    Job description 5
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 190px; width: 240px;">
+                    {{ 1604154371674 | date: 'medium' }}
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 190px; width: 240px;">
+                    {{ 1604154371674 | date: 'medium' }}
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 60px; width: 100px;">
+                    0
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 80px; width: 100px;">
+                    100%
+                  </td>
+                </tr>
+                <tr style="height: 55px" class="font-size-14 border-bottom border-bg-2">
+                  <td class="p-0 pr-2" style="min-width: 100px; width: 140px;">
+                    Job name 6
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 150px; width: 200px;">
+                    Job description 6
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 190px; width: 240px;">
+                    {{ 1604154371674 | date: 'medium' }}
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 190px; width: 240px;">
+                    {{ 1604154371674 | date: 'medium' }}
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 60px; width: 100px;">
+                    0
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 80px; width: 100px;">
+                    100%
+                  </td>
+                </tr>
+                <tr style="height: 55px" class="font-size-14 border-bottom border-bg-2">
+                  <td class="p-0 pr-2" style="min-width: 100px; width: 140px;">
+                    Job name 7
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 150px; width: 200px;">
+                    Job description 7
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 190px; width: 240px;">
+                    {{ 1604154371674 | date: 'medium' }}
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 190px; width: 240px;">
+                    {{ 1604154371674 | date: 'medium' }}
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 60px; width: 100px;">
+                    0
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 80px; width: 100px;">
+                    100%
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>`
   }
 ];

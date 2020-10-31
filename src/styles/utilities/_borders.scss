@@ -1,0 +1,45 @@
+// *************************************************
+// Borders based on grid breakpoints
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .border#{$infix}-1         { border: $border-width solid $border-color; }
+    .border-top#{$infix}-1     { border-top: $border-width solid $border-color; }
+    .border-right#{$infix}-1   { border-right: $border-width solid $border-color; }
+    .border-bottom#{$infix}-1  { border-bottom: $border-width solid $border-color; }
+    .border-left#{$infix}-1    { border-left: $border-width solid $border-color; }
+
+    .border#{$infix}-0        { border: 0; }
+    .border-top#{$infix}-0    { border-top: 0; }
+    .border-right#{$infix}-0  { border-right: 0; }
+    .border-bottom#{$infix}-0 { border-bottom: 0; }
+    .border-left#{$infix}-0   { border-left: 0; }
+
+    @include rtl {
+      .border-right#{$infix}-1 {
+        border-right: unset;
+        border-left: $border-width solid $border-color;
+      }
+      .border-left#{$infix}-1 {
+        border-left: unset;
+        border-right: $border-width solid $border-color;
+      }
+    }
+  }
+}
+
+
+// *************************************************
+// Custom border colors
+$custom-border-colors: (
+  'bg-1': var(--bg-1),
+  'bg-2': var(--bg-2),
+  'text-6': var(--text-6),
+);
+
+@each $color, $value in $custom-border-colors {
+  .border-#{$color} {
+    border-color: $value !important;
+  }
+}

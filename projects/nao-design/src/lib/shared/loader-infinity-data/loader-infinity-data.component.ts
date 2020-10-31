@@ -12,7 +12,7 @@ import {Component, Input, OnInit} from '@angular/core';
   styles: []
 })
 export class LoaderInfinityDataComponent implements OnInit {
-  @Input() public class = 'mt-5';
+  @Input() public class = '';
   constructor() { }
 
   ngOnInit() {

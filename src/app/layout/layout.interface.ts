@@ -34,6 +34,7 @@ export const MenuItems = [
   {
     type: 'items', text: 'Utilities', route: '/utility', icon: 'nao-icon-settings', isOpen: false,
     items: [
+      {type: 'item', route: '/utility/borders', text: 'Borders'},
       {type: 'item', route: '/utility/colors', text: 'Colors'},
       {type: 'item', route: '/utility/iconography', text: 'Iconography'},
       {type: 'item', route: '/utility/illustration', text: 'Illustration'},
@@ -58,7 +59,7 @@ export const MenuItems = [
     items: [
       {type: 'item', route: '/samples/forms', text: 'Forms'},
       {type: 'item', route: '/samples/modals', text: 'Modals'},
-      {type: 'item', route: '/samples/file-manager', text: 'File manager'},
+      // {type: 'item', route: '/samples/file-manager', text: 'File manager'},
     ]
   },
 ];

@@ -55,14 +55,102 @@
 }
 
 
-//todo: add this to the docs
-//todo: add this to the docs
-//todo: add this to the docs
-//todo: add this to the docs
-.nao-mb-20 {
-  margin-bottom: 20px;
+// *************************************************
+// Custom .mr-* .ml-* .pl-* .pr-* classes + fixes for RTL
+
+$custom-spacers: (
+  20: 20px,
+  30: 30px,
+  40: 40px,
+  50: 50px,
+  75: 75px,
+  100: 100px,
+);
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $prop, $abbrev in (margin: m, padding: p) {
+      @each $size, $length in $custom-spacers {
+        .#{$abbrev}#{$infix}-#{$size} { #{$prop}: $length !important; }
+        .#{$abbrev}t#{$infix}-#{$size},
+        .#{$abbrev}y#{$infix}-#{$size} {
+          #{$prop}-top: $length !important;
+        }
+        .#{$abbrev}r#{$infix}-#{$size},
+        .#{$abbrev}x#{$infix}-#{$size} {
+          #{$prop}-right: $length !important;
+        }
+        .#{$abbrev}b#{$infix}-#{$size},
+        .#{$abbrev}y#{$infix}-#{$size} {
+          #{$prop}-bottom: $length !important;
+        }
+        .#{$abbrev}l#{$infix}-#{$size},
+        .#{$abbrev}x#{$infix}-#{$size} {
+          #{$prop}-left: $length !important;
+        }
+      }
+    }
+
+    // Negative margins (e.g., where `.mb-n20` is negative version of `.mb-20`)
+    @each $size, $length in $custom-spacers {
+      @if $size != 0 {
+        .m#{$infix}-n#{$size} { margin: -$length !important; }
+        .mt#{$infix}-n#{$size},
+        .my#{$infix}-n#{$size} {
+          margin-top: -$length !important;
+        }
+        .mr#{$infix}-n#{$size},
+        .mx#{$infix}-n#{$size} {
+          margin-right: -$length !important;
+        }
+        .mb#{$infix}-n#{$size},
+        .my#{$infix}-n#{$size} {
+          margin-bottom: -$length !important;
+        }
+        .ml#{$infix}-n#{$size},
+        .mx#{$infix}-n#{$size} {
+          margin-left: -$length !important;
+        }
+      }
+    }
+  }
 }
 
-.nao-mt-20 {
-  margin-top: 20px;
+.body-rtl {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+      @each $prop, $abbrev in (margin: m, padding: p) {
+        @each $size, $length in $custom-spacers {
+          .#{$abbrev}r#{$infix}-#{$size} {
+            #{$prop}-left: $length !important;
+            #{$prop}-right: unset !important;
+          }
+
+          .#{$abbrev}l#{$infix}-#{$size} {
+            #{$prop}-right: $length !important;
+            #{$prop}-left: unset !important;
+          }
+        }
+      }
+
+      // Negative margins (e.g., where `.mb-n20` is negative version of `.mb-20`)
+      @each $size, $length in $custom-spacers {
+        @if $size != 0 {
+          .mr#{$infix}-n#{$size} {
+            margin-left: -$length !important;
+            margin-right: unset !important;
+          }
+
+          .ml#{$infix}-n#{$size} {
+            margin-right: -$length !important;
+            margin-left: unset !important;
+          }
+        }
+      }
+    }
+  }
 }

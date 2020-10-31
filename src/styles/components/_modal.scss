@@ -21,9 +21,17 @@
   margin: 0;
   top: 0;
   left: 0;
+
+  .modal-content {
+    border-radius: 0;
+  }
 }
 
-// *******************************************************************************
+.max-vw-100 {
+  max-width: calc(100vw - (100vw - 100%)) !important;
+}
+
+// *************************************************
 // * Modals sizes
 .modal-md {
   max-width: 430px !important;
@@ -37,7 +45,6 @@
 .nao-modal {
 
   .modal-title {
-    //margin-top: 3px;
     font-weight: $font-weight-semibold;
   }
 
@@ -48,7 +55,6 @@
 
   .modal-header {
     padding: pixelToRem(15px) pixelToRem(20px);
-    //padding: pixelToRem(15px) pixelToRem(40px);
     font-size: pixelToRem(20px);
     min-height: 73px;
     color: var(--text-primary);
@@ -60,7 +66,6 @@
 
   .modal-body {
     padding: pixelToRem(15px) pixelToRem(20px);
-    //padding: pixelToRem(25px) pixelToRem(40px) pixelToRem(15px) pixelToRem(40px);
     color: var(--text-primary-light);
     font-size: pixelToRem(14px);
 
@@ -121,7 +126,6 @@
     color: var(--text-primary);
 
     .modal-title {
-      //margin-bottom: 3px;
       font-weight: $font-weight-semibold;
     }
 
@@ -136,5 +140,86 @@
 
   .modal-footer {
     padding: pixelToRem(20px) pixelToRem(30px);
+  }
+}
+
+
+// *************************************************
+// * Modals full screen
+.nao-modal-fs-content {
+  min-height: 100vh;
+  border-radius: 0;
+  padding-top: 60px;
+  position: relative;
+
+  .nao-modal-header {
+    height: 60px;
+    border-bottom: solid 1px var(--bg-2);
+    line-height: 1;
+    padding: 5px 30px 5px 15px;
+    font-size: pixelToRem(16px);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1051;
+
+    .nao-cancel-btn {
+      padding: 5px !important;
+      // position fix
+      margin-top: 1px;
+
+      i {
+        font-size: 13px;
+      }
+    }
+
+    .vertical-separator {
+      margin-right: 20px;
+      margin-left: 15px;
+      height: 16px;
+      border-left: solid 1px var(--text-7);
+    }
+  }
+
+  .nao-modal-body {
+    max-width: 1540px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+.nao-modal-fs-content-2 {
+  min-height: 100vh;
+  border-radius: 0;
+  padding-top: 60px;
+  position: relative;
+
+  // header sizes
+  .nao-modal-header-md { max-width: 665px; }
+  .nao-modal-header-lg { max-width: 1150px; }
+
+  .nao-modal-header {
+    height: 60px;
+    border-bottom: solid 1px var(--bg-2);
+    line-height: 1;
+    // 37px padding-right fixes a bug with padding + scrollbar width
+    padding: 5px 37px 5px 15px;
+    font-size: pixelToRem(16px);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1051;
+
+    .nao-back-btn-container {
+      min-width: 70px;
+    }
+  }
+
+  .nao-modal-body {
+    max-width: 1422px;
+    margin: 0 auto;
+    width: 100%;
   }
 }

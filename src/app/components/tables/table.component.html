@@ -3,61 +3,61 @@
     <h1 class="title">Table</h1>
     <p class="description"></p>
 
-    <div class="elem-container">
-      <h2 class="title">Simple table</h2>
-      <div class="nao-bd-example" [innerHTML]="data[0].html | sanitizeHtml"></div>
+<!--    <div class="elem-container">-->
+<!--      <h2 class="title">Simple table</h2>-->
+<!--      <div class="nao-bd-example" [innerHTML]="data[0].html | sanitizeHtml"></div>-->
 
-      <div class="nao-bd-clipboard">
-        <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[0].html)" placement="top"
-          ngbTooltip="Copied!" tooltipClass="nao-copy-tooltip" triggers="click" autoClose="false">Copy</button>
-      </div>
-      <div class="nao-example-highlight">
-        <pre><div [innerHTML]="data[0].html | htmlPrismPipe | sanitizeHtml"></div></pre>
-      </div>
-    </div>
+<!--      <div class="nao-bd-clipboard">-->
+<!--        <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[0].html)" placement="top"-->
+<!--          ngbTooltip="Copied!" tooltipClass="nao-copy-tooltip" triggers="click" autoClose="false">Copy</button>-->
+<!--      </div>-->
+<!--      <div class="nao-example-highlight">-->
+<!--        <pre><div [innerHTML]="data[0].html | htmlPrismPipe | sanitizeHtml"></div></pre>-->
+<!--      </div>-->
+<!--    </div>-->
 
-    <div class="elem-container">
-      <h2 class="title">Simple table with sticky header and scrollbar</h2>
-      <ul>
-        <li>
-          You could modify table cells to have a min-width:
-          <span class="token tag"><span class="token tag"><span
-                class="token punctuation">&lt;</span>th</span>&nbsp;<span class="token attr-name">scope</span><span
-              class="token attr-value"><span class="token punctuation">=</span><span
-                class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span
-              class="token style-attr language-css"><span class="token attr-name"> <span
-                  class="token attr-name">style</span></span><span class="token punctuation">="</span><span
-                class="token attr-value"><span class="token property">min-width</span><span
-                  class="token punctuation">:</span> 200px</span><span class="token punctuation">"</span></span><span
-              class="token punctuation">&gt;</span></span>Name<span class="token tag"><span class="token tag"><span
-                class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
-        </li>
-        <li>
-          If you need a sticky header just add <span class="highlighter-warning">.nao-sticky-thead</span> class to the
-          <span class="token tag"><span class="token tag"><span
-                class="token punctuation">&lt;</span>thead</span>&nbsp;<span class="token attr-name">class</span><span
-              class="token attr-value"><span class="token punctuation">=</span><span
-                class="token punctuation">"</span>table-header
-              nao-sticky-thead<span class="token punctuation">"</span></span><span
-              class="token punctuation">&gt;</span></span>
-        </li>
-        <li>
-          And if you need to have a fixed container with scrollbar just add
-          <span class="highlighter-warning">height: 300px;</span> and <span class="highlighter-warning">overflow:
-            auto;</span> to a custom class.
-        </li>
-      </ul>
+<!--    <div class="elem-container">-->
+<!--      <h2 class="title">Simple table with sticky header and scrollbar</h2>-->
+<!--      <ul>-->
+<!--        <li>-->
+<!--          You could modify table cells to have a min-width:-->
+<!--          <span class="token tag"><span class="token tag"><span-->
+<!--                class="token punctuation">&lt;</span>th</span>&nbsp;<span class="token attr-name">scope</span><span-->
+<!--              class="token attr-value"><span class="token punctuation">=</span><span-->
+<!--                class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span-->
+<!--              class="token style-attr language-css"><span class="token attr-name"> <span-->
+<!--                  class="token attr-name">style</span></span><span class="token punctuation">="</span><span-->
+<!--                class="token attr-value"><span class="token property">min-width</span><span-->
+<!--                  class="token punctuation">:</span> 200px</span><span class="token punctuation">"</span></span><span-->
+<!--              class="token punctuation">&gt;</span></span>Name<span class="token tag"><span class="token tag"><span-->
+<!--                class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--          If you need a sticky header just add <span class="highlighter-warning">.nao-sticky-thead</span> class to the-->
+<!--          <span class="token tag"><span class="token tag"><span-->
+<!--                class="token punctuation">&lt;</span>thead</span>&nbsp;<span class="token attr-name">class</span><span-->
+<!--              class="token attr-value"><span class="token punctuation">=</span><span-->
+<!--                class="token punctuation">"</span>table-header-->
+<!--              nao-sticky-thead<span class="token punctuation">"</span></span><span-->
+<!--              class="token punctuation">&gt;</span></span>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--          And if you need to have a fixed container with scrollbar just add-->
+<!--          <span class="highlighter-warning">height: 300px;</span> and <span class="highlighter-warning">overflow:-->
+<!--            auto;</span> to a custom class.-->
+<!--        </li>-->
+<!--      </ul>-->
 
-      <div class="nao-bd-example" [innerHTML]="data[1].html | sanitizeHtml"></div>
+<!--      <div class="nao-bd-example" [innerHTML]="data[1].html | sanitizeHtml"></div>-->
 
-      <div class="nao-bd-clipboard">
-        <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[1].html)" placement="top"
-          ngbTooltip="Copied!" tooltipClass="nao-copy-tooltip" triggers="click" autoClose="false">Copy</button>
-      </div>
-      <div class="nao-example-highlight">
-        <pre><div [innerHTML]="data[1].html | htmlPrismPipe | sanitizeHtml"></div></pre>
-      </div>
-    </div>
+<!--      <div class="nao-bd-clipboard">-->
+<!--        <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[1].html)" placement="top"-->
+<!--          ngbTooltip="Copied!" tooltipClass="nao-copy-tooltip" triggers="click" autoClose="false">Copy</button>-->
+<!--      </div>-->
+<!--      <div class="nao-example-highlight">-->
+<!--        <pre><div [innerHTML]="data[1].html | htmlPrismPipe | sanitizeHtml"></div></pre>-->
+<!--      </div>-->
+<!--    </div>-->
 
 
     <div class="elem-container">
@@ -183,11 +183,11 @@
       </div>
 
       <div class="nao-bd-clipboard">
-        <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[2].html)" placement="top"
+        <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[0].html)" placement="top"
           ngbTooltip="Copied!" tooltipClass="nao-copy-tooltip" triggers="click" autoClose="false">Copy</button>
       </div>
       <div class="nao-example-highlight">
-        <pre><div [innerHTML]="data[2].html | htmlPrismPipe | sanitizeHtml"></div></pre>
+        <pre><div [innerHTML]="data[0].html | htmlPrismPipe | sanitizeHtml"></div></pre>
       </div>
 
     </div>
@@ -351,49 +351,78 @@
               </tbody>
             </table>
           </div>
-          <div class="card-footer d-flex flex-row align-items-center justify-content-between">
+
+          <div class="card-footer d-flex flex-row align-items-center justify-content-between nao-pagination">
             <div>
-              <span class='rows-label'>Rows per page: </span>
-              <select (change)="paging.perPage$.next($event.target.value)" [value]="paging.perPage$.getValue()"
-                class="custom-select custom-select-sm d-inline-block w-auto">
-                <option *ngFor="let limit of [5, 10, 20, 50, 100]" [value]="limit">{{ limit }}</option>
-              </select>
+              Rows per page:
+              <ng-select (change)="paging.perPage$.next($event);"
+                         [clearable]="false"
+                         [disabled]="false"
+                         [items]="[5, 10, 20, 50, 100]"
+                         [ngModel]="paging.perPage$.getValue()"
+                         [searchable]="false"
+                         class="nao-ng-select-sm d-inline-block w-auto">
+              </ng-select>
+
             </div>
-            <div>
-              <ngb-pagination class="pull-right" [collectionSize]="paging.totalRows"
-                [pageSize]="paging.perPage$.getValue()" [(page)]="paging.currentPage" [maxSize]="paging.maxSize"
-                [directionLinks]="true" [boundaryLinks]="true">
-                <ng-template ngbPaginationPrevious>Previous</ng-template>
-                <ng-template ngbPaginationNext>Next</ng-template>
-                <ng-template ngbPaginationEllipsis>...</ng-template>
-                <ng-template ngbPaginationNumber let-page>{{ page }}</ng-template>
+
+            <div class="ml-auto d-flex align-items-center">
+              <ngb-pagination [(page)]="paging.currentPage"
+                              [boundaryLinks]="true"
+                              [collectionSize]="paging.totalRows"
+                              [directionLinks]="true"
+                              [disabled]="false"
+                              [maxSize]="paging.maxSize"
+                              [pageSize]="paging.perPage$.getValue()">
+                <ng-template ngbPaginationPrevious><i class="nao-icon-arrow-back-1"></i></ng-template>
+                <ng-template ngbPaginationFirst>
+                  <div class="d-flex" style="padding-top: 4px">
+                    <div class="nao-line-pagination"></div>
+                    <i class="nao-icon-arrow-back-1"></i>
+                  </div>
+                </ng-template>
+                <ng-template ngbPaginationNext><i class="nao-icon-arrow-next-1"></i></ng-template>
+                <ng-template ngbPaginationLast>
+                  <div class="d-flex" style="padding-top: 4px">
+                    <i class="nao-icon-arrow-next-1"></i>
+                    <div class="nao-line-pagination"></div>
+                  </div>
+                </ng-template>
               </ngb-pagination>
+
+              <div class="pagination-separator"></div>
+              <div>
+                page {{ paging.currentPage }} of {{ paging.totalPages !== 0 ? paging.totalPages : 1 }}
+              </div>
             </div>
+
+
           </div>
+
         </div>
 
         <div class="nao-bd-clipboard">
-          <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[3].ts1)" placement="top"
+          <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[1].ts1)" placement="top"
             ngbTooltip="Copied!" tooltipClass="nao-copy-tooltip" triggers="click" autoClose="false">Copy</button>
         </div>
         <div class="nao-example-highlight">
-          <pre><div [innerHTML]="data[3].ts1 | typescriptPrismPipe | sanitizeHtml"></div></pre>
+          <pre><div [innerHTML]="data[1].ts1 | typescriptPrismPipe | sanitizeHtml"></div></pre>
         </div>
 
         <div class="nao-bd-clipboard">
-          <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[3].ts2)" placement="top"
+          <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[1].ts2)" placement="top"
             ngbTooltip="Copied!" tooltipClass="nao-copy-tooltip" triggers="click" autoClose="false">Copy</button>
         </div>
         <div class="nao-example-highlight">
-          <pre><div [innerHTML]="data[3].ts2 | typescriptPrismPipe | sanitizeHtml"></div></pre>
+          <pre><div [innerHTML]="data[1].ts2 | typescriptPrismPipe | sanitizeHtml"></div></pre>
         </div>
 
         <div class="nao-bd-clipboard">
-          <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[3].html)" placement="top"
+          <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[1].html)" placement="top"
             ngbTooltip="Copied!" tooltipClass="nao-copy-tooltip" triggers="click" autoClose="false">Copy</button>
         </div>
         <div class="nao-example-highlight">
-          <pre><div [innerHTML]="data[3].html | htmlPrismPipe | sanitizeHtml"></div></pre>
+          <pre><div [innerHTML]="data[1].html | htmlPrismPipe | sanitizeHtml"></div></pre>
         </div>
       </div>
 
@@ -507,55 +536,82 @@
               </tbody>
             </table>
           </div>
-          <div class="card-footer d-flex flex-row align-items-center justify-content-between">
+          <div class="card-footer d-flex flex-row align-items-center justify-content-between nao-pagination">
             <div>
-              <span class='rows-label'>Rows per page: </span>
-              <select (change)="paging.perPage$.next($event.target.value)" [value]="paging.perPage$.getValue()"
-                class="custom-select custom-select-sm d-inline-block w-auto">
-                <option *ngFor="let limit of [5, 10, 20, 50, 100]" [value]="limit">{{ limit }}</option>
-              </select>
+              Rows per page:
+              <ng-select (change)="paging.perPage$.next($event);"
+                         [clearable]="false"
+                         [disabled]="false"
+                         [items]="[5, 10, 20, 50, 100]"
+                         [ngModel]="paging.perPage$.getValue()"
+                         [searchable]="false"
+                         class="nao-ng-select-sm d-inline-block w-auto">
+              </ng-select>
+
             </div>
-            <div>
-              <ngb-pagination class="pull-right" [collectionSize]="paging.totalRows"
-                [pageSize]="paging.perPage$.getValue()" [(page)]="paging.currentPage" [maxSize]="paging.maxSize"
-                [directionLinks]="true" [boundaryLinks]="true">
-                <ng-template ngbPaginationPrevious>Previous</ng-template>
-                <ng-template ngbPaginationNext>Next</ng-template>
-                <ng-template ngbPaginationEllipsis>...</ng-template>
-                <ng-template ngbPaginationNumber let-page>{{ page }}</ng-template>
+
+            <div class="ml-auto d-flex align-items-center">
+              <ngb-pagination [(page)]="paging.currentPage"
+                              [boundaryLinks]="true"
+                              [collectionSize]="paging.totalRows"
+                              [directionLinks]="true"
+                              [disabled]="false"
+                              [maxSize]="paging.maxSize"
+                              [pageSize]="paging.perPage$.getValue()">
+                <ng-template ngbPaginationPrevious><i class="nao-icon-arrow-back-1"></i></ng-template>
+                <ng-template ngbPaginationFirst>
+                  <div class="d-flex" style="padding-top: 4px">
+                    <div class="nao-line-pagination"></div>
+                    <i class="nao-icon-arrow-back-1"></i>
+                  </div>
+                </ng-template>
+                <ng-template ngbPaginationNext><i class="nao-icon-arrow-next-1"></i></ng-template>
+                <ng-template ngbPaginationLast>
+                  <div class="d-flex" style="padding-top: 4px">
+                    <i class="nao-icon-arrow-next-1"></i>
+                    <div class="nao-line-pagination"></div>
+                  </div>
+                </ng-template>
               </ngb-pagination>
+
+              <div class="pagination-separator"></div>
+              <div>
+                page {{ paging.currentPage }} of {{ paging.totalPages !== 0 ? paging.totalPages : 1 }}
+              </div>
             </div>
+
+
           </div>
         </div>
 
         <div class="nao-bd-clipboard">
-          <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[4].ts1)" placement="top"
+          <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[2].ts1)" placement="top"
             ngbTooltip="Copied!" tooltipClass="nao-copy-tooltip" triggers="click" autoClose="false">Copy</button>
         </div>
         <div class="nao-example-highlight">
-          <pre><div [innerHTML]="data[4].ts1 | typescriptPrismPipe | sanitizeHtml"></div></pre>
+          <pre><div [innerHTML]="data[2].ts1 | typescriptPrismPipe | sanitizeHtml"></div></pre>
         </div>
 
         <div class="nao-bd-clipboard">
-          <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[4].ts2)" placement="top"
+          <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[2].ts2)" placement="top"
             ngbTooltip="Copied!" tooltipClass="nao-copy-tooltip" triggers="click" autoClose="false">Copy</button>
         </div>
         <div class="nao-example-highlight">
-          <pre><div [innerHTML]="data[4].ts2 | typescriptPrismPipe | sanitizeHtml"></div></pre>
+          <pre><div [innerHTML]="data[2].ts2 | typescriptPrismPipe | sanitizeHtml"></div></pre>
         </div>
 
         <div class="nao-bd-clipboard">
-          <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[4].html)" placement="top"
+          <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[2].html)" placement="top"
             ngbTooltip="Copied!" tooltipClass="nao-copy-tooltip" triggers="click" autoClose="false">Copy</button>
         </div>
         <div class="nao-example-highlight">
-          <pre><div [innerHTML]="data[4].html | htmlPrismPipe | sanitizeHtml"></div></pre>
+          <pre><div [innerHTML]="data[2].html | htmlPrismPipe | sanitizeHtml"></div></pre>
         </div>
       </div>
     </div>
 
     <div class="elem-container">
-      <h2 class="title">Nao table 1 - neste rows</h2>
+      <h2 class="title">Nao table 1 - nested rows</h2>
       <div class="nao-bd-example">
         <ng-template #rowOverlay let-item let-i="i">
           <div class="d-flex justify-content-end align-items-center nao-row-overlay">
@@ -720,41 +776,251 @@
               </tbody>
             </table>
           </div>
-          <div class="card-footer d-flex flex-row align-items-center justify-content-between">
+          <div class="card-footer d-flex flex-row align-items-center justify-content-between nao-pagination">
             <div>
-              <span class='rows-label'>Rows per page:</span>
-              <select (change)="paging.perPage$.next($event.target.value)" [value]="paging.perPage$.getValue()"
-                class="custom-select custom-select-sm d-inline-block w-auto">
-                <option *ngFor="let limit of [5, 10, 20, 50, 100]" [value]="limit">{{ limit }}</option>
-              </select>
+              Rows per page:
+              <ng-select (change)="paging.perPage$.next($event);"
+                         [clearable]="false"
+                         [disabled]="false"
+                         [items]="[5, 10, 20, 50, 100]"
+                         [ngModel]="paging.perPage$.getValue()"
+                         [searchable]="false"
+                         class="nao-ng-select-sm d-inline-block w-auto">
+              </ng-select>
+
             </div>
-            <div>
-              <ngb-pagination class="pull-right" [collectionSize]="paging.totalRows"
-                [pageSize]="paging.perPage$.getValue()" [(page)]="paging.currentPage" [maxSize]="paging.maxSize"
-                [directionLinks]="true" [boundaryLinks]="true">
-                <ng-template ngbPaginationPrevious>Previous</ng-template>
-                <ng-template ngbPaginationNext>Next</ng-template>
-                <ng-template ngbPaginationEllipsis>...</ng-template>
-                <ng-template ngbPaginationNumber let-page>{{ page }}</ng-template>
+
+            <div class="ml-auto d-flex align-items-center">
+              <ngb-pagination [(page)]="paging.currentPage"
+                              [boundaryLinks]="true"
+                              [collectionSize]="paging.totalRows"
+                              [directionLinks]="true"
+                              [disabled]="false"
+                              [maxSize]="paging.maxSize"
+                              [pageSize]="paging.perPage$.getValue()">
+                <ng-template ngbPaginationPrevious><i class="nao-icon-arrow-back-1"></i></ng-template>
+                <ng-template ngbPaginationFirst>
+                  <div class="d-flex" style="padding-top: 4px">
+                    <div class="nao-line-pagination"></div>
+                    <i class="nao-icon-arrow-back-1"></i>
+                  </div>
+                </ng-template>
+                <ng-template ngbPaginationNext><i class="nao-icon-arrow-next-1"></i></ng-template>
+                <ng-template ngbPaginationLast>
+                  <div class="d-flex" style="padding-top: 4px">
+                    <i class="nao-icon-arrow-next-1"></i>
+                    <div class="nao-line-pagination"></div>
+                  </div>
+                </ng-template>
               </ngb-pagination>
+
+              <div class="pagination-separator"></div>
+              <div>
+                page {{ paging.currentPage }} of {{ paging.totalPages !== 0 ? paging.totalPages : 1 }}
+              </div>
             </div>
+
+
           </div>
         </div>
 
         <div class="nao-bd-clipboard">
-          <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[5].ts1)" placement="top"
+          <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[3].ts1)" placement="top"
             ngbTooltip="Copied!" tooltipClass="nao-copy-tooltip" triggers="click" autoClose="false">Copy</button>
         </div>
         <div class="nao-example-highlight">
-          <pre><div [innerHTML]="data[5].ts1 | typescriptPrismPipe | sanitizeHtml"></div></pre>
+          <pre><div [innerHTML]="data[3].ts1 | typescriptPrismPipe | sanitizeHtml"></div></pre>
         </div>
 
         <div class="nao-bd-clipboard">
-          <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[5].html)" placement="top"
+          <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[3].html)" placement="top"
             ngbTooltip="Copied!" tooltipClass="nao-copy-tooltip" triggers="click" autoClose="false">Copy</button>
         </div>
         <div class="nao-example-highlight">
-          <pre><div [innerHTML]="data[5].html | htmlPrismPipe | sanitizeHtml"></div></pre>
+          <pre><div [innerHTML]="data[3].html | htmlPrismPipe | sanitizeHtml"></div></pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="elem-container">
+      <h2 class="title">Nao table 2 </h2>
+      <div class="nao-bd-example">
+
+
+        <div class="card nao-card-table-2 flex-grow-1">
+          <div class="card-header d-flex flex-column">
+            <h6 class="mb-1 font-size-18">Job status</h6>
+            <h6 class="font-size-14">Check the status of your active integrations, local imports, uploads and exports to make sure your data is flowing as it should.</h6>
+          </div>
+          <div class="card-body pt-0">
+            <div class="overflow-auto">
+              <table class="w-100">
+                <thead>
+                <!-- Header -->
+                <tr class="font-size-12 font-weight-semibold text-primary-lightest border-bottom border-bg-2 text-uppercase">
+
+                  <th class="p-0 pb-2 pt-20" scope="col" style="min-width: 100px; width: 140px">Job name</th>
+                  <th class="p-0 pb-2 pt-20" scope="col" style="min-width: 150px; width: 200px">Description</th>
+                  <th class="p-0 pb-2 pt-20" scope="col" style="min-width: 190px; width: 240px">Started</th>
+                  <th class="p-0 pb-2 pt-20" scope="col" style="min-width: 190px; width: 240px">Ended</th>
+                  <th class="p-0 pb-2 pt-20" scope="col" style="min-width: 60px; width: 100px">Retries</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!-- Rows -->
+                <tr style="height: 55px" class="font-size-14 border-bottom border-bg-2">
+                  <td class="p-0 pr-2" style="min-width: 100px; width: 140px;">
+                    Job name 1
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 150px; width: 200px;">
+                    Job description 1
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 190px; width: 240px;">
+                    {{ 1604154371674 | date: 'medium' }}
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 190px; width: 240px;">
+                    {{ 1604154371674 | date: 'medium' }}
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 60px; width: 100px;">
+                    0
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 80px; width: 100px;">
+                    20%
+                  </td>
+                </tr>
+                <tr style="height: 55px" class="font-size-14 border-bottom border-bg-2">
+                  <td class="p-0 pr-2" style="min-width: 100px; width: 140px;">
+                    Job name 2
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 150px; width: 200px;">
+                    Job description 2
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 190px; width: 240px;">
+                    {{ 1604154371674 | date: 'medium' }}
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 190px; width: 240px;">
+                    {{ 1604154371674 | date: 'medium' }}
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 60px; width: 100px;">
+                    5
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 80px; width: 100px;">
+                    20%
+                  </td>
+                </tr>
+                <tr style="height: 55px" class="font-size-14 border-bottom border-bg-2">
+                  <td class="p-0 pr-2" style="min-width: 100px; width: 140px;">
+                    Job name 3
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 150px; width: 200px;">
+                    Job description 3
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 190px; width: 240px;">
+                    {{ 1604154371674 | date: 'medium' }}
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 190px; width: 240px;">
+                    {{ 1604154371674 | date: 'medium' }}
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 60px; width: 100px;">
+                    2
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 80px; width: 100px;">
+                    10%
+                  </td>
+                </tr>
+                <tr style="height: 55px" class="font-size-14 border-bottom border-bg-2">
+                  <td class="p-0 pr-2" style="min-width: 100px; width: 140px;">
+                    Job name 4
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 150px; width: 200px;">
+                    Job description 4
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 190px; width: 240px;">
+                    {{ 1604154371674 | date: 'medium' }}
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 190px; width: 240px;">
+                    {{ 1604154371674 | date: 'medium' }}
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 60px; width: 100px;">
+                    0
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 80px; width: 100px;">
+                    100%
+                  </td>
+                </tr>
+                <tr style="height: 55px" class="font-size-14 border-bottom border-bg-2">
+                  <td class="p-0 pr-2" style="min-width: 100px; width: 140px;">
+                    Job name 5
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 150px; width: 200px;">
+                    Job description 5
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 190px; width: 240px;">
+                    {{ 1604154371674 | date: 'medium' }}
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 190px; width: 240px;">
+                    {{ 1604154371674 | date: 'medium' }}
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 60px; width: 100px;">
+                    0
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 80px; width: 100px;">
+                    100%
+                  </td>
+                </tr>
+                <tr style="height: 55px" class="font-size-14 border-bottom border-bg-2">
+                  <td class="p-0 pr-2" style="min-width: 100px; width: 140px;">
+                    Job name 6
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 150px; width: 200px;">
+                    Job description 6
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 190px; width: 240px;">
+                    {{ 1604154371674 | date: 'medium' }}
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 190px; width: 240px;">
+                    {{ 1604154371674 | date: 'medium' }}
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 60px; width: 100px;">
+                    0
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 80px; width: 100px;">
+                    100%
+                  </td>
+                </tr>
+                <tr style="height: 55px" class="font-size-14 border-bottom border-bg-2">
+                  <td class="p-0 pr-2" style="min-width: 100px; width: 140px;">
+                    Job name 7
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 150px; width: 200px;">
+                    Job description 7
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 190px; width: 240px;">
+                    {{ 1604154371674 | date: 'medium' }}
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 190px; width: 240px;">
+                    {{ 1604154371674 | date: 'medium' }}
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 60px; width: 100px;">
+                    0
+                  </td>
+                  <td class="p-0 pr-2" style="min-width: 80px; width: 100px;">
+                    100%
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="nao-bd-clipboard">
+          <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[3].html)" placement="top"
+                  ngbTooltip="Copied!" tooltipClass="nao-copy-tooltip" triggers="click" autoClose="false">Copy</button>
+        </div>
+        <div class="nao-example-highlight">
+          <pre><div [innerHTML]="data[3].html | htmlPrismPipe | sanitizeHtml"></div></pre>
         </div>
       </div>
     </div>

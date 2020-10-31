@@ -1,3 +1,6 @@
+$modal-lg: 515px;
+$modal-xl: 700px;
+
 @import "./styles/naologic-crm-theme.scss";
 @import "./styles/bootstrap.scss";
 
@@ -25,3 +28,4 @@
 @import "./styles/utilities/sizing";
 @import "./styles/utilities/spacing";
 @import "./styles/utilities/colors";
+@import "./styles/utilities/borders";

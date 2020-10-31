@@ -155,12 +155,40 @@
 // *************************************************
 // ng-select
 .ng-select.ng-select-opened > .ng-select-container {
-  border: solid 1px var(--text-primary-lightest);
+  border: solid 1px var(--primary-lightest);
 }
 
 //todo: add this to docs
 .ng-select-invalid .ng-select-container {
     border: solid 1px var(--danger) !important;
+}
+
+.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value {
+  background-color: unset !important;
+}
+
+.ng-select .ng-arrow-wrapper {
+  padding-top: 0 !important;
+  margin-top: -2px;
+}
+
+.ng-select .ng-arrow-wrapper .ng-arrow {
+  display: none !important;
+}
+
+.ng-select span.ng-arrow-wrapper:before {
+  content: "\f9b1";
+  display: inline-block;
+  font-family:  'nao-system-icon';
+  font-size: 8px;
+  text-rendering: auto;
+  color: var(--text-6);
+}
+
+.ng-select-text-6 {
+  .ng-select-container .ng-value-container {
+    color: var(--text-6) !important;
+  }
 }
 
 // *************************************************
@@ -171,6 +199,29 @@
   .ng-select-container {
     min-height: pixelToRem(32px) !important;
     height: pixelToRem(32px) !important;
+  }
+
+  &.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-placeholder {
+    top: 7px !important;
+  }
+
+  &.ng-select .ng-select-container {
+    height: unset !important;
+  }
+
+  .nao-badge-select {
+    font-size: pixelToRem(12px);
+    border-radius: 10px;
+    background-color: var(--text-7);
+    padding: 3px 10px;
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  &.ng-select.ng-arrow-wrapper {
+    margin-top: unset;
   }
 }
 
@@ -305,9 +356,32 @@
   }
 }
 
+.ng-select-disabled {
+  .ng-select-container {
+    background-color: var(--white) !important;
+  }
+}
 
+// todo: find a solution to fix this from variables
+.ng-dropdown-panel.ng-select-bottom {
+  margin-top: 0 !important;
+}
 
+.ng-select {
+  .ng-select-container {
+    border-color: #DCE5F8;
+  }
+}
 
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-option {
+  white-space: normal !important;
+}
+
+.ng-dropdown-panel {
+  min-width: 100%;
+  width: auto !important;
+  max-width: 570px;
+}
 // *************************************************
 // nao dropdown for navigation bar
 .nao-dropdown-navbar {
@@ -363,4 +437,232 @@
   .d-flex:not(:last-child) {
     margin-bottom: 20px;
   }
+}
+
+// *************************************************
+// Nao sort select used on days from dashboards
+.nao-sort-select-container {
+  position: relative;
+
+  .ng-select {
+    min-width: 127px;
+    height: 40px;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: 0 1px 3px -1px var(--bg-2), 0 2px 5px -1px var(--text-6);
+    background-color: var(--white);
+    font-size: pixelToRem(14px);
+
+    &.ng-select-single .ng-select-container {
+      height: 40px;
+      min-height: 40px;
+    }
+
+    &.ng-select-container .ng-value-container, .ng-value-container {
+      padding-top: 12px;
+      padding-left: 14px;
+      padding-right: 10px;
+    }
+
+    @include rtl {
+      &.ng-select-container .ng-value-container, .ng-value-container {
+        padding-left: 10px;
+        padding-right: 14px;
+      }
+    }
+
+    .ng-arrow-wrapper {
+      width: 33px;
+      height: 40px;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px 0 rgba(231, 231, 231, 0.5);
+      border: solid 1px var(--border-primary);
+      background-color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      margin-right: -1px;
+
+      @include rtl {
+        margin-right: unset;
+        margin-left: -1px;
+      }
+    }
+  }
+  // ng-select arrow update
+  .ng-select .ng-arrow-wrapper .ng-arrow {
+    display: none;
+  }
+
+  .ng-select span.ng-arrow-wrapper:before {
+    display: block;
+    content: '';
+    background-size: 10px 7px;
+    height: 7px;
+    width: 10px;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='14px' height='8px' viewBox='0 0 14 8' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EIcon/Simple/Arrow/Simple/Up/Text-Primary%3C/title%3E%3Cg id='Ecommerce' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Ecommerce---Navigation---Mobile' transform='translate(-385.000000, -206.000000)' fill='%23a3a9c0' fill-rule='nonzero'%3E%3Cg id='Icon/Simple/Arrow/Simple/Up/Text-Primary' transform='translate(392.000000, 210.000000) rotate(90.000000) translate(-392.000000, -210.000000) translate(388.000000, 203.000000)'%3E%3Cg id='Icon/Arrow/Simple/Up/Text-Primary' transform='translate(0.000000, -0.000000)'%3E%3Cpath d='M8.69848688,11.7142862 C8.35744702,11.7145906 8.03033485,11.5790265 7.78948688,11.3375714 L3.97948688,7.63685714 L0.178915455,11.3375714 C-0.325571685,11.8248214 -1.12747926,11.8178531 -1.62342271,11.3219096 C-2.11936617,10.8259661 -2.12633453,10.0240586 -1.63908454,9.51957143 L3.97948688,4 L9.60748688,9.51957143 C9.97508278,9.88727833 10.0850293,10.4401899 9.88607286,10.9205559 C9.68711638,11.4009218 9.21842447,11.7141747 8.69848688,11.7142862 Z' id='Path' transform='translate(3.991982, 7.857143) rotate(90.000000) translate(-3.991982, -7.857143) '%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+  }
+
+  .nao-sort-text{
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    font-size: pixelToRem(10px);
+    font-weight: $font-weight-light;
+    color: var(--text-primary-lightest);
+    z-index: 1025;
+
+    @include rtl {
+      left: unset;
+      right: 15px;
+    }
+  }
+}
+
+// *************************************************
+// Nao dropdown checkboxes
+.nao-dropdown-checkboxes {
+  margin-top: 5px;
+  min-width: 172px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px -1px #e6ebf0, 0 2px 5px -1px var(--text-6);
+  background-color: var(--white);
+  font-size: pixelToRem(16px);
+  padding: 15px 0;
+  border: none;
+  user-select: none;
+  max-height: 380px;
+  overflow: auto;
+
+  .nao-dropdown-header {
+    white-space: nowrap;
+    padding: 5px 40px 5px 15px;
+  }
+
+  .nao-dropdown-item {
+    padding: 8px 40px 5px 15px;
+    color: var(--text-primary-light);
+
+    @include rtl {
+      padding: 8px 15px 5px 40px;
+
+    }
+  }
+
+  @include rtl {
+    .nao-custom-checkbox-sm {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      flex-direction: row-reverse;
+      padding-left: 33px;
+    }
+  }
+
+  .label-option-checkbox {
+    white-space: nowrap;
+    margin-right: auto;
+
+    @include rtl {
+      margin-left: auto;
+      margin-right: unset;
+    }
+  }
+
+  .select-as-pill-container {
+    min-width: 170px;
+    max-width: 170px;
+    margin-left: 15px;
+
+    .selected-as-pill {
+      max-width: 170px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .dropdown-item-data-type {
+    cursor: pointer;
+  }
+}
+
+
+// todo: check with BO11 and move everything from there
+// todo: check with BO11 and move everything from there
+// todo: check with BO11 and move everything from there
+// todo: check with BO11 and move everything from there
+//// *******************************************************************************
+//// * <nao-select-checkboxes></nao-select-checkboxes
+//.nao-select-checkboxes {
+//  .nao-select-field {
+//    height: 32px;
+//    border-radius: 4px;
+//    box-shadow: 0 2px 4px 0 rgba(231, 231, 231, 0.5);
+//    border: solid 1px #dce5f8;
+//    background-color: var(--white);
+//    font-size: pixelToRem(12px);
+//    color: var(--text-primary-lightest);
+//    padding: 8px 12px 8px 8px;
+//    cursor: pointer;
+//
+//    .field-name {
+//      text-transform: uppercase;
+//    }
+//
+//    .nao-ng-arrow {
+//      line-height: 0;
+//      font-size: 8px;
+//      color: var(--text-6);
+//      margin-left: 5px;
+//    }
+//
+//    &.nao-filter-active {
+//      color: var(--primary);
+//    }
+//
+//    .nao-spinner-loader {
+//      border-radius: 50%;
+//      width: 17px;
+//      height: 17px;
+//      margin-right: 5px;
+//      font-size: 10px;
+//      position: relative;
+//      text-indent: -9999em;
+//      border-top: 2px solid rgba(66,66,66,.2);
+//      border-right: 2px solid rgba(66,66,66,.2);
+//      border-bottom: 2px solid rgba(66,66,66,.2);
+//      border-left: 2px solid #424242;
+//      transform: translateZ(0);
+//      -webkit-animation: .8s linear infinite load8;
+//      animation: .8s linear infinite load8;
+//    }
+//  }
+//
+//  // Dropdown checkboxes
+//  .nao-options-checkboxes {
+//    min-width: 310px;
+//    border-radius: 4px;
+//    box-shadow: 0 1px 3px -1px var(--bg-2), 0 2px 5px -1px var(--text-6);
+//    background-color: var(--white);
+//    padding: 5px 20px;
+//    font-size: pixelToRem(12px);
+//    margin-top: 5px;
+//    max-height: 300px;
+//    overflow: auto;
+//
+//    .custom-control-label {
+//      cursor: pointer;
+//    }
+//    .label-option-checkbox {
+//      cursor: pointer;
+//      margin-left: 5px;
+//    }
+//  }
+//}
+
+.dropdown-is-invalid {
+  border-color: var(--danger);
 }

@@ -13,7 +13,8 @@ export const CardsCodeBlocks = [
             <div class="card-footer">
                 Footer
             </div>
-        </div>`},
+        </div>`
+  },
   {
     html: `
         <div class="card nao-card-1" style="max-width: 760px">
@@ -28,7 +29,8 @@ export const CardsCodeBlocks = [
             <div class="card-footer text-right">
                 <a href="javascript:void(0)" class="btn btn-primary">Go somewhere</a>
             </div>
-        </div>`},
+        </div>`
+  },
   {
     html: `
         <div class="nao-card-sm-dashboard bg-white d-flex align-items-center mr-3 mb-3">
@@ -50,7 +52,8 @@ export const CardsCodeBlocks = [
             </span>
           </div>
         </div>
-        `},
+        `
+  },
   {
     html: `
         <div class="nao-dashboard-lg-card bg-white">
@@ -68,7 +71,8 @@ export const CardsCodeBlocks = [
           <div class="nao-dashboard-card-body">
 
           </div>
-        </div>`},
+        </div>`
+  },
   {
     html: `
             <div class="nao-card-board mr-3 mb-3">
@@ -79,7 +83,8 @@ export const CardsCodeBlocks = [
               <div class="nao-board-name">Board name</div>
               <span class="nao-card-info text-right">Board info</span>
             </div>
-            `},
+            `
+  },
   {
     html: `
         <div class="nao-kanban-ticket p-3">
@@ -96,7 +101,8 @@ export const CardsCodeBlocks = [
             <div class="ticket-body">
                 Ticket body
             </div>
-        </div>`},
+        </div>`
+  },
   {
     html: `
         <div class="nao-kanban-ticket p-3">
@@ -189,7 +195,8 @@ export const CardsCodeBlocks = [
             </div>
 
           </div>
-        </div>`},
+        </div>`
+  },
   {
     html: `
             <div class="nao-kanban-lane">
@@ -425,5 +432,28 @@ export const CardsCodeBlocks = [
             </form>
           </div>
         </div>`
+  },
+  {
+    html: `
+      <div class="card nao-card-2 nao-mw-800">
+        <div class="card-header">
+          <div class="nao-card-title font-size-18 mb-0">Users</div>
+          <div class="nao-card-subtitle font-size-14">Pick a role</div>
+        </div>
+        <div class="card-body">
+        <!--Section with text-->
+        <div class="mb-20">
+          <div class="d-flex flex-column">
+            <label class="text-primary-light font-weight-semibold text-uppercase font-size-12">
+              Role
+            </label>
+            <span class="text-primary font-size-12">
+                Specify which product you want to make the main feature of your website. This will be the first thing visitors see when they visit your website.
+              </span>
+          </div>
+        </div>
+        <hr class="m-0 mb-20 nao-mw-660 border-bg-2">
+      </div>
+    </div>`
   }
 ];

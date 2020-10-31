@@ -53,7 +53,7 @@
       <div class="nao-example-highlight">
         <pre><div [innerHTML]="data[0].ts2 | typescriptPrismPipe | sanitizeHtml"></div></pre>
       </div>
-      <p>Comes in diffrent sizes</p>
+      <p>Comes in different sizes</p>
       <ul>
         <li>
           <span class="highlighter-warning">.modal-sm</span>
@@ -115,6 +115,69 @@
           <span class="highlighter-warning">.bg-danger</span>
         </li>
       </ul>
+
+    </div>
+
+    <div class="elem-container">
+      <h2 class="title">Nao full screen modal with input fields</h2>
+      <p>Full screen modal with input fields</p>
+      <div class="nao-bd-example nao-modal-example">
+        <button type="button" (click)="onCreate()" class="btn btn-primary">Open full screen modal</button>
+      </div>
+
+      <div class="nao-bd-clipboard">
+        <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[3].html)" placement="top"
+                ngbTooltip="Copied!" tooltipClass="nao-copy-tooltip" triggers="click" autoClose="false">Copy</button>
+      </div>
+
+      <div class="nao-example-highlight">
+        <pre><div [innerHTML]="data[3].html | htmlPrismPipe | sanitizeHtml"></div></pre>
+      </div>
+
+      <div class="nao-bd-clipboard">
+        <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[3].ts1)" placement="top"
+                ngbTooltip="Copied!" tooltipClass="nao-copy-tooltip" triggers="click" autoClose="false">Copy</button>
+      </div>
+
+      <div class="nao-example-highlight">
+        <pre><div [innerHTML]="data[3].ts1 | typescriptPrismPipe | sanitizeHtml"></div></pre>
+      </div>
+
+    </div>
+
+    <div class="elem-container">
+      <h2 class="title">Nao full screen modal for pdfs</h2>
+      <p>Full screen modal for pdf views</p>
+      <p>Header comes in different sizes</p>
+      <ul>
+        <li>
+          <span class="highlighter-warning">.nao-modal-header-md</span> with a max width of <code>665px</code>
+        </li>
+        <li>
+          <span class="highlighter-warning">.nao-modal-header-lg</span> with a max width of <code>1150px</code>
+        </li>
+      </ul>
+      <div class="nao-bd-example nao-modal-example">
+        <button type="button" (click)="onPdf()" class="btn btn-primary">Open full screen modal for pdfs</button>
+      </div>
+
+      <div class="nao-bd-clipboard">
+        <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[3].html)" placement="top"
+                ngbTooltip="Copied!" tooltipClass="nao-copy-tooltip" triggers="click" autoClose="false">Copy</button>
+      </div>
+
+      <div class="nao-example-highlight">
+        <pre><div [innerHTML]="data[3].html | htmlPrismPipe | sanitizeHtml"></div></pre>
+      </div>
+
+      <div class="nao-bd-clipboard">
+        <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[3].ts1)" placement="top"
+                ngbTooltip="Copied!" tooltipClass="nao-copy-tooltip" triggers="click" autoClose="false">Copy</button>
+      </div>
+
+      <div class="nao-example-highlight">
+        <pre><div [innerHTML]="data[3].ts1 | typescriptPrismPipe | sanitizeHtml"></div></pre>
+      </div>
 
     </div>
   </div>

@@ -41,6 +41,15 @@ label {
 // TODO: Add this to variables
 .form-control {
   color: var(--text-primary) !important;
+  border-color: #DCE5F8 !important;
+
+  &:focus {
+    border-color: var(--primary-lightest) !important;
+  }
+}
+
+.form-control[readonly] {
+  background-color: var(--white);
 }
 
 .form-control:focus {
@@ -48,7 +57,8 @@ label {
 }
 
 .form-control-sm {
-  font-weight: $font-weight-lighter;
+  font-size: pixelToRem(12px);
+  font-weight: $font-weight-regular;
 }
 
 // *************************************************
@@ -75,7 +85,8 @@ input[type=number] {
 // Nao crm free trial form
 .nao-crm-free-trial-form {
   border-radius: 8px;
-  box-shadow: 0 2px 2px 2px #d8dceb;;
+  box-shadow: 0 13px 27px -5px var(--text-7), 0 0 16px -8px var(--bg-2) !important;
+  position: relative;
   padding: 30px 50px;
   max-width: 410px;
 
@@ -111,7 +122,6 @@ input[type=number] {
   }
 
   .nao-crm-back-login {
-    font-size: pixelToRem(14px);
     color: var(--text-primary);
 
     a {
@@ -569,4 +579,67 @@ input[type=number] {
 
 .rotate-90 {
   transform: rotate(90deg);
+}
+
+
+.test-placeholder ::-webkit-input-placeholder{
+  color: #BBC1D1;
+}
+
+// *********************************
+// Nao-form-control-2 - a new style for input fields
+.nao-form-control-2 {
+  box-shadow: 0 1px 3px -1px var(--bg-2), 0 2px 5px -1px var(--text-6);
+  background-color: var(--white);
+  border-color: var(--white);
+  color: var(--primary) !important;
+  padding: 10px 15px;
+
+  &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--text-6);
+    text-transform: none;
+    opacity: 1; /* Firefox */
+  }
+
+  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--text-6);
+    text-transform: none;
+  }
+
+  &::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--text-6);
+    text-transform: none;
+  }
+}
+
+.nao-from-control-2-sm {
+  font-size: pixelToRem(14px);
+  padding: 10px 15px;
+  height: 36px;
+}
+
+// *********************************
+// Nao input group with small ng select
+.nao-input-ng-select-group-sm {
+  position: relative;
+  display: flex;
+
+  .form-control {
+    padding-right: 70px;
+    padding-left: 12px;
+  }
+
+  .nao-ng-select-sm {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+
+    .ng-select-container {
+      border: none;
+      border-radius: 0;
+      border-left: 1px solid var(--bg-2);
+      min-height: 30px !important;
+      min-width: 55px;
+    }
+  }
 }

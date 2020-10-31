@@ -28,3 +28,66 @@ a {
   -ms-user-select: none;
   user-select: none;
 }
+
+// Fix for focus outline
+:focus {
+  outline: none !important;
+}
+
+// fix autofill remove background color
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-animation: autofill 0s forwards;
+  animation: autofill 0s forwards;
+}
+
+@keyframes autofill {
+  100% {
+    background: transparent;
+    color: inherit;
+  }
+}
+
+@-webkit-keyframes autofill {
+  100% {
+    background: transparent;
+    color: inherit;
+  }
+}
+
+
+// Disable resize for textarea fields
+textarea {
+  resize: none;
+}
+
+.badge {
+  font-size: pixelToRem(14px);
+}
+
+.bs-datepicker-body table.years td span {
+  line-height: 46px !important;
+}
+
+.bs-datepicker-body table td span.selected, .bs-datepicker-body table td.selected span {
+  background-color: var(--primary);
+}
+
+.bs-datepicker-body table td:before, .bs-datepicker-body table td span:before {
+  left: -3px;
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+.font-weight-semibold {
+  font-weight: $font-weight-semibold !important;
+}
+
+// modal xxl
+.modal-xxl {
+  max-width: 900px;
+}

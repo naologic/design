@@ -35,3 +35,58 @@
 .position-unset {
   position: unset !important;
 }
+
+.font-size-10 { font-size: pixelToRem(10px) !important; }
+.font-size-12 { font-size: pixelToRem(12px) !important; }
+.font-size-14 { font-size: pixelToRem(14px) !important; }
+.font-size-16 { font-size: pixelToRem(16px) !important; }
+.font-size-18 { font-size: pixelToRem(18px) !important; }
+.font-size-20 { font-size: pixelToRem(20px) !important; }
+.font-size-35 { font-size: pixelToRem(35px) !important; }
+
+.line-height-1 { line-height: 1 !important; }
+
+.link-color-primary, .link-color-primary:hover {
+  color: var(--primary);
+}
+
+.link-color-text-primary, .link-color-text-primary:hover {
+  color: var(--text-primary);
+}
+
+.text-color-primary {
+  color: var(--primary) !important;
+}
+
+.min-width-0 {
+  min-width: unset !important;
+}
+
+.nao-arrow-rotate-90 {
+  transform: rotate(90deg);
+}
+
+
+.nao-center-position-absolute {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.show-on-hover-container:hover {
+  .show-on-hover {
+    opacity: 1;
+  }
+  .hide-on-hover {
+    opacity: 0;
+  }
+}
+
+.show-on-hover {
+  opacity: 0;
+}
+
+.hide-on-hover {
+  opacity: 1;
+}

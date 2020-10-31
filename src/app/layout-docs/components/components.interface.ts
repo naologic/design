@@ -20,20 +20,22 @@ export const ComponentsCodeBlocks = [
   },
   {
     html: `
-      <ul class="nao-nav-breadcrumb">
-        <li>
-        <a href="javascript:void(0)">Home</a>
-        </li>
-        <li>
-        <a href="javascript:void(0)">Category</a>
-        </li>
-        <li>
-        <a href="javascript:void(0)">Sub-category</a>
-        </li>
-        <li>
-        Current page
-        </li>
-      </ul>`
+       <div class="nao-breadcrumb-container">
+        <ul class="nao-nav-breadcrumb d-flex align-items-center">
+          <li>
+          <a href="javascript:void(0)">Home</a>
+          </li>
+          <li>
+          <a href="javascript:void(0)">Category</a>
+          </li>
+          <li>
+          <a href="javascript:void(0)">Sub-category</a>
+          </li>
+          <li>
+          Current page
+          </li>
+        </ul>
+      </div>`
   },
   {
     html: `

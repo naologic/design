@@ -675,5 +675,86 @@
       </div>
     </div>
 
+
+    <div class="elem-container">
+      <h2 class="title">Nao select for dashboard days</h2>
+      <div class='nao-bd-example nao-ng-select-example'>
+        <div class="d-flex">
+          <div class="nao-sort-select-container">
+            <ng-select bindLabel="name" [(ngModel)]="naoDashValueSelect" [clearable]="false" [searchable]="false" [multiple]="false" clearAllText="" [readonly]="false">
+              <ng-option value="7">Last 7 days</ng-option>
+              <ng-option value="28">Last 28 days</ng-option>
+              <ng-option value="90">Last 90 days</ng-option>
+            </ng-select>
+            <div class="nao-sort-text">Period</div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="nao-bd-clipboard">
+        <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[10].html)" placement="top"
+                ngbTooltip="Copied!" tooltipClass="nao-copy-tooltip" triggers="click" autoClose="false">Copy</button>
+      </div>
+      <div class="nao-example-highlight">
+        <pre><div [innerHTML]="data[10].html | htmlPrismPipe | sanitizeHtml"></div></pre>
+      </div>
+    </div>
+
+    <div class="elem-container">
+      <h2 class="title">Nao dropdown with checkboxes</h2>
+      <div class='nao-bd-example nao-ng-select-example'>
+
+        <div class="btn-group" ngbDropdown container="body"
+             [placement]="$flow.isRTL() ? 'bottom-right' : 'bottom-left'">
+          <button type="button" class="btn btn-simple-primary" ngbDropdownToggle>
+            Menu
+          </button>
+          <div class="nao-dropdown-checkboxes" ngbDropdownMenu>
+            <!--Iterate over checkboxes-->
+            <div class="nao-dropdown-item">
+
+              <div class="d-flex custom-control custom-checkbox nao-custom-checkbox-sm">
+                <input id="checkbox1" class="custom-control-input" type="checkbox">
+                <label for="checkbox1" class="custom-control-label"></label>
+                <label for="checkbox1" class="align-self-center mb-0 label-option-checkbox">Checkbox 1</label>
+              </div>
+              <div class="d-flex custom-control custom-checkbox nao-custom-checkbox-sm">
+                <input id="checkbox2" class="custom-control-input" type="checkbox">
+                <label for="checkbox2" class="custom-control-label"></label>
+                <label for="checkbox2" class="align-self-center mb-0 label-option-checkbox">Checkbox 2</label>
+              </div>
+              <div class="d-flex custom-control custom-checkbox nao-custom-checkbox-sm">
+                <input id="checkbox3" class="custom-control-input" type="checkbox">
+                <label for="checkbox3" class="custom-control-label"></label>
+                <label for="checkbox3" class="align-self-center mb-0 label-option-checkbox">Checkbox 3</label>
+              </div>
+              <div class="d-flex custom-control custom-checkbox nao-custom-checkbox-sm">
+                <input id="checkbox4" class="custom-control-input" type="checkbox">
+                <label for="checkbox4" class="custom-control-label"></label>
+                <label for="checkbox4" class="align-self-center mb-0 label-option-checkbox">Checkbox 4</label>
+              </div>
+              <div class="d-flex custom-control custom-checkbox nao-custom-checkbox-sm">
+                <input id="checkbox5" class="custom-control-input" type="checkbox">
+                <label for="checkbox5" class="custom-control-label"></label>
+                <label for="checkbox5" class="align-self-center mb-0 label-option-checkbox">Checkbox 5</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <div class="nao-bd-clipboard">
+        <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[11].html)" placement="top"
+                ngbTooltip="Copied!" tooltipClass="nao-copy-tooltip" triggers="click" autoClose="false">Copy</button>
+      </div>
+      <div class="nao-example-highlight">
+        <pre><div [innerHTML]="data[11].html | htmlPrismPipe | sanitizeHtml"></div></pre>
+      </div>
+    </div>
+
   </div>
 </div>

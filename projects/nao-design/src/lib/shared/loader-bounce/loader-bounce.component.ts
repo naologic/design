@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'loader-bounce',
   templateUrl: './loader-bounce.component.html',
   styles: [`
     .spinner-bounce {
-      width: 40px;
-      height: 40px;
-
       position: relative;
-      margin: 100px auto;
+      margin: 0 auto;
     }
 
     .double-bounce1, .double-bounce2 {
@@ -51,6 +48,7 @@ import { Component, OnInit } from '@angular/core';
   `]
 })
 export class LoaderBounceComponent implements OnInit {
+  @Input() size = '40px';
 
   constructor() { }
 

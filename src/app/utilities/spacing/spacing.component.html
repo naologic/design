@@ -7,10 +7,10 @@
 
     <div class="elem-container">
       <h2 class="title">Nao spacing classes</h2>
-      <ul>
-        <li><code>.nao-mb-20</code> margin bottom of <code>20px</code></li>
-        <li><code>.nao-mt-20</code> margin top of <code>20px</code></li>
-      </ul>
+<!--      <ul>-->
+<!--        <li><code>.nao-mb-20</code> margin bottom of <code>20px</code></li>-->
+<!--        <li><code>.nao-mt-20</code> margin top of <code>20px</code></li>-->
+<!--      </ul>-->
     </div>
 
     <div class="elem-container">
@@ -48,6 +48,15 @@
         <li><code>5</code> - (by default) for classes that set the margin or padding to <code>40px</code></li>
         <li><code>6</code> - (by default) for classes that set the margin or padding to <code>65px</code></li>
         <li><code>7</code> - (by default) for classes that set the margin or padding to <code>105px</code></li>
+      </ul>
+      <p>Or you could pick a custom size: </p>
+      <ul>
+        <li><code>20</code> - for classes that set the margin or padding to <code>20px</code></li>
+        <li><code>30</code> - for classes that set the margin or padding to <code>30px</code></li>
+        <li><code>40</code> - for classes that set the margin or padding to <code>40px</code></li>
+        <li><code>50</code> - for classes that set the margin or padding to <code>50px</code></li>
+        <li><code>75</code> - for classes that set the margin or padding to <code>75px</code></li>
+        <li><code>100</code> - for classes that set the margin or padding to <code>100px</code></li>
       </ul>
       <p>All the <code>.ml-* </code> <code>.mr-*</code> classes are <strong>RTL</strong> ready (the margins are flipping on the
         RTL version, for example: <code>.ml-1</code> would have <code>margin-right: 5px;</code> insted of <code>margin-left: 5px;</code>).</p>
@@ -150,6 +159,90 @@
     </div>
 
     <div class="elem-container">
+      <h2 class="title">Custom padding</h2>
+      <div class="nao-bd-clipboard">
+        <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[0].html)" placement="top"
+                ngbTooltip="Copied!" tooltipClass="nao-copy-tooltip" triggers="click" autoClose="false">Copy</button>
+      </div>
+      <div class="nao-example-highlight">
+        <pre><div [innerHTML]="data[0].html | htmlPrismPipe | sanitizeHtml"></div></pre>
+      </div>
+      <div class="table-container">
+        <table class="table text-left">
+          <thead>
+          <tr>
+            <th>Class</th>
+            <th>Padding</th>
+            <th>Example</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><code>.p-20</code></td>
+            <td>20px</td>
+            <td class="d-flex">
+              <div class='bg-primary p-20'>
+                <div class="bg-light" style="width: 30px;height: 30px;">
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><code>.p-30</code></td>
+            <td>30px</td>
+            <td class="d-flex">
+              <div class='bg-primary p-30'>
+                <div class="bg-light" style="width: 30px;height: 30px;">
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><code>.p-40</code></td>
+            <td>40px</td>
+            <td class="d-flex">
+              <div class='bg-primary p-40'>
+                <div class="bg-light" style="width: 30px;height: 30px;">
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><code>.p-50</code></td>
+            <td>50px</td>
+            <td class="d-flex">
+              <div class='bg-primary p-4'>
+                <div class="bg-light" style="width: 30px;height: 30px;">
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><code>.p-75</code></td>
+            <td>75px</td>
+            <td class="d-flex">
+              <div class='bg-primary p-5'>
+                <div class="bg-light" style="width: 30px;height: 30px;">
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><code>.p-100</code></td>
+            <td>65px</td>
+            <td class="d-flex">
+              <div class='bg-primary p-6'>
+                <div class="bg-light" style="width: 30px;height: 30px;">
+                </div>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="elem-container">
       <h2 class="title">Margin</h2>
       <div class="nao-bd-clipboard">
         <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[1].html)" placement="top"
@@ -224,6 +317,79 @@
                 <div class="bg-primary" style="width: 30px; height: 30px;"></div>
               </td>
             </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="elem-container">
+      <h2 class="title">Custom margins</h2>
+      <div class="nao-bd-clipboard">
+        <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[1].html)" placement="top"
+                ngbTooltip="Copied!" tooltipClass="nao-copy-tooltip" triggers="click" autoClose="false">Copy</button>
+      </div>
+      <div class="nao-example-highlight">
+        <pre><div [innerHTML]="data[1].html | htmlPrismPipe | sanitizeHtml"></div></pre>
+      </div>
+      <div class="table-container">
+        <table class="table text-left">
+          <thead>
+          <tr>
+            <th>Class</th>
+            <th>Margin</th>
+            <th>Example</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><code>.mr-20</code></td>
+            <td>20px</td>
+            <td class="d-flex">
+              <div class="bg-primary mr-20" style="width: 30px; height: 30px;"></div>
+              <div class="bg-primary" style="width: 30px; height: 30px;"></div>
+            </td>
+          </tr>
+          <tr>
+            <td><code>.mr-30</code></td>
+            <td>30px</td>
+            <td class="d-flex">
+              <div class="bg-primary mr-30" style="width: 30px; height: 30px;"></div>
+              <div class="bg-primary" style="width: 30px; height: 30px;"></div>
+            </td>
+          </tr>
+          <tr>
+            <td><code>.mr-40</code></td>
+            <td>40px</td>
+            <td class="d-flex">
+              <div class="bg-primary mr-40" style="width: 30px; height: 30px;"></div>
+              <div class="bg-primary" style="width: 30px; height: 30px;"></div>
+            </td>
+          </tr>
+          <tr>
+            <td><code>.mr-50</code></td>
+            <td>50px</td>
+            <td class="d-flex">
+              <div class="bg-primary mr-50" style="width: 30px; height: 30px;"></div>
+              <div class="bg-primary" style="width: 30px; height: 30px;"></div>
+            </td>
+          </tr>
+          <tr>
+            <td><code>.mr-75</code></td>
+            <td>75px</td>
+            <td class="d-flex">
+              <div class="bg-primary mr-75" style="width: 30px; height: 30px;"></div>
+              <div class="bg-primary" style="width: 30px; height: 30px;"></div>
+            </td>
+          </tr>
+          <tr>
+            <td><code>.mr-100</code></td>
+            <td>100px</td>
+            <td class="d-flex">
+              <div class="bg-primary mr-100" style="width: 30px; height: 30px;"></div>
+              <div class="bg-primary" style="width: 30px; height: 30px;"></div>
+            </td>
+          </tr>
 
           </tbody>
         </table>

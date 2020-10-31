@@ -10,6 +10,7 @@ import { IllustrationComponent } from './illustration/illustration.component';
 import { SizingComponent } from './sizing/sizing.component';
 import { NaoDesignModule } from '@naologic/design';
 import { UtilityComponent } from './utility/utility.component';
+import { BordersComponent } from './borders/borders.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { UtilityComponent } from './utility/utility.component';
     TypographyComponent,
     SpacingComponent,
     SizingComponent,
-    UtilityComponent
+    UtilityComponent,
+    BordersComponent
   ],
   imports: [
     CommonModule,

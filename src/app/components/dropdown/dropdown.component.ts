@@ -9,6 +9,7 @@ import { ComponentsPublicFlow } from '../components.flowservice';
 })
 export class DropdownComponent implements OnInit {
   public data = DropdownCodeBlocks;
+  public naoDashValueSelect = 'Last 7 days';
 
   constructor(
     public readonly appService: AppService,

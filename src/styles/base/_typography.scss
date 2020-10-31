@@ -1,0 +1,7 @@
+.nao-text-uppercase-first {
+  text-transform: lowercase;
+}
+
+.nao-text-uppercase-first::first-letter {
+  text-transform: uppercase;
+}

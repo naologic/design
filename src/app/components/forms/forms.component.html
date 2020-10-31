@@ -258,6 +258,9 @@
 
   <div class="elem-container">
     <h2 class="title">Checkboxes</h2>
+    <p>
+      Sometimes you need to center the normal checkbox and you can use this class <code>.center-custom-checkbox</code>
+    </p>
 
     <div [innerHTML]="data[12].html | sanitizeHtml" class='nao-bd-example'></div>
 
@@ -336,6 +339,56 @@
     </div>
     <div class="nao-example-highlight">
       <pre><div [innerHTML]="data[15].html | htmlPrismPipe | sanitizeHtml"></div></pre>
+    </div>
+
+  </div>
+
+  <div class="elem-container">
+    <h2 class="title">Nao form control 2</h2>
+    <p>
+      A new style of input field
+    </p>
+
+    <div [innerHTML]="data[16].html | sanitizeHtml" class='nao-bd-example'></div>
+
+    <div class="nao-bd-clipboard">
+      <button (click)="copyToClipboard(data[16].html)" autoClose="false" class="btn-clipboard" ngbTooltip="Copied!"
+              placement="top" tooltipClass="nao-copy-tooltip" triggers="click" type="button">Copy
+      </button>
+    </div>
+    <div class="nao-example-highlight">
+      <pre><div [innerHTML]="data[16].html | htmlPrismPipe | sanitizeHtml"></div></pre>
+    </div>
+
+  </div>
+
+  <div class="elem-container">
+    <h2 class="title">Nao input + ng-select small</h2>
+    <p>
+      Nao input group with small ng-select
+    </p>
+
+    <div class='nao-bd-example'>
+      <div class="nao-input-ng-select-group-sm nao-mw-200">
+        <input type="number" class="form-control form-control-sm" [placeholder]="'1.93'" />
+        <ng-select [clearable]="false" class="nao-ng-select-sm ng-select-text-6" placeholder="kg">
+          <ng-option value="kg">
+            kg
+          </ng-option>
+          <ng-option value="lb">
+            lb
+          </ng-option>
+        </ng-select>
+      </div>
+    </div>
+
+    <div class="nao-bd-clipboard">
+      <button (click)="copyToClipboard(data[17].html)" autoClose="false" class="btn-clipboard" ngbTooltip="Copied!"
+              placement="top" tooltipClass="nao-copy-tooltip" triggers="click" type="button">Copy
+      </button>
+    </div>
+    <div class="nao-example-highlight">
+      <pre><div [innerHTML]="data[17].html | htmlPrismPipe | sanitizeHtml"></div></pre>
     </div>
 
   </div>

@@ -335,7 +335,8 @@
   border-radius: 8px;
   box-shadow: $nao-card-box-shadow-1;
   background-color: var(--white);
-  padding: 61px 50px 22px 50px;
+  position: relative;
+  padding: 40px 50px 20px 50px;
 
   .headshot {
     display: flex;
@@ -612,5 +613,30 @@
     @media only screen and (max-width: 910px) {
       min-width: 250px;
     }
+  }
+}
+
+
+// *************************************************
+// Nao card 2
+.nao-card-2 {
+  box-shadow: 2px 13px 27px -5px #c8cfe9, -13px 2px 16px -8px #e6ebf0;;
+
+  .card-header {
+    padding: 12px 30px;
+
+    .nao-card-title {
+      font-size: pixelToRem(16px);
+      font-weight: $font-weight-semibold;
+    }
+
+    .nao-card-subtitle {
+      font-size: pixelToRem(12px);
+    }
+  }
+
+  .card-body {
+    padding: 20px 30px 50px 30px;
+    background-color: var(--bg-3);
   }
 }

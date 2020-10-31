@@ -470,5 +470,23 @@
       </div>
     </div>
 
+    <div class="elem-container">
+      <h2 class="title">Nao card 2</h2>
+      <p>
+        Nao card 2
+      </p>
+
+      <div class="nao-bd-example" [innerHTML]="data[13].html | sanitizeHtml"></div>
+
+      <div class="nao-bd-clipboard">
+        <button type="button" class="btn-clipboard" (click)="copyToClipboard(data[13].html)" placement="top"
+                ngbTooltip="Copied!" tooltipClass="nao-copy-tooltip" triggers="click" autoClose="false">Copy</button>
+      </div>
+
+      <div class="nao-example-highlight">
+        <pre><div [innerHTML]="data[13].html | htmlPrismPipe | sanitizeHtml"></div></pre>
+      </div>
+    </div>
+
   </div>
 </div>
