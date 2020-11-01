@@ -493,6 +493,11 @@
     height: 18px;
     border-right: solid 1px var(--text-primary);
     margin-right: 12px;
+
+    @include rtl {
+      margin-left: 12px;
+      margin-right: unset;
+    }
   }
 
   .nao-line-pagination {

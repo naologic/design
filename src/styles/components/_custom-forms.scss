@@ -195,6 +195,9 @@ $custom-switch-lg-top-fix: 3px;
   min-height: unset;
   padding-left: 19px;
 
+  @include rtl {
+    padding-left: unset;
+  }
   .custom-control-label::before,
   .custom-control-label::after {
     top: 50%;
@@ -202,6 +205,10 @@ $custom-switch-lg-top-fix: 3px;
     width: 14px !important;
     height: 14px !important;
     left: -19px;
+
+    @include rtl {
+      left: 6px;
+    }
   }
 }
 
