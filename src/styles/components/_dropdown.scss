@@ -538,6 +538,10 @@
   .nao-dropdown-header {
     white-space: nowrap;
     padding: 5px 40px 5px 15px;
+
+    @include rtl {
+      text-align: right;
+    }
   }
 
   .nao-dropdown-item {
@@ -552,10 +556,7 @@
 
   @include rtl {
     .nao-custom-checkbox-sm {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: reverse;
-      flex-direction: row-reverse;
-      padding-left: 33px;
+      padding-right: 33px;
     }
   }
 
