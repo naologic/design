@@ -197,7 +197,7 @@ $custom-switch-lg-top-fix: 3px;
 
   @include rtl {
     padding-left: unset;
-    padding-right: unset;
+    padding-right: 19px;
   }
   .custom-control-label::before,
   .custom-control-label::after {
