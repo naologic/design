@@ -48,7 +48,7 @@
     box-shadow: 0 1px 3px -1px var(--bg-2), 0 2px 5px -1px var(--text-6);
     background-color: var(--white);
     min-width: 270px;
-    padding: 20px 0px;
+    padding: 20px 0;
     border: none;
 
     .dropdown-item {
@@ -60,6 +60,11 @@
       img {
         margin-right: 10px;
         width: 17px;
+
+        @include rtl {
+          margin-right: unset;
+          margin-left: 10px;
+        }
       }
 
       &:hover {

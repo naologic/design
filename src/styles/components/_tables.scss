@@ -84,6 +84,11 @@
     padding-bottom: pixelToRem(12px);
     min-height: 60px;
 
+    @include rtl {
+      padding-left: 29px;
+      padding-right: 32px;
+    }
+
     .card-header-title {
       font-size: pixelToRem(20px);
       font-weight: $font-weight-regular;
@@ -475,6 +480,12 @@
     &.disabled {
       opacity: .3;
     }
+
+    @include rtl {
+      &:nth-child(1), &:nth-child(2), &:nth-last-child(1), &:nth-last-child(2) {
+        transform: rotate(180deg);
+      }
+    }
   }
 
   .pagination-separator {
@@ -506,5 +517,51 @@
 
   .card-body {
     padding: 25px 40px 0 40px;
+  }
+}
+
+
+// *******************************************************************************
+// * Utilities
+// todo: Document all of this
+.nao-full-width-table {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1800px;
+}
+
+.nao-empty-state-card {
+  max-width: 390px;
+
+  .nao-empty-state-title {
+    margin-top: 20px;
+    font-weight: $font-weight-semibold;
+    font-size: pixelToRem(20px);
+  }
+
+  .nao-empty-state-description {
+    font-size: pixelToRem(14px);
+    color: var(--text-primary-lighter);
+  }
+}
+
+.table-cell-padding-fix {
+  padding-left: 42px !important;
+
+  @include rtl {
+    padding-left: unset !important;
+    padding-right: 33px !important;
+  }
+}
+
+.nao-scrollbar {
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    border-radius: 13px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
   }
 }

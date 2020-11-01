@@ -402,6 +402,7 @@ strong {
 
 .btn-primary-text-only {
   color: var(--primary);
+
   text-transform: none;
 
   &:hover {
@@ -410,5 +411,13 @@ strong {
 
   &:focus, &:active {
     box-shadow: none;
+  }
+}
+
+.nao-btn-right {
+  text-align: right;
+
+  @include rtl {
+    text-align: left;
   }
 }
